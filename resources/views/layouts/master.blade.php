@@ -61,5 +61,10 @@
         crossorigin="anonymous">
     </script>
 
+    <script>
+        $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link), .dropdown-item").click(function(){
+            $(".dropdown-item.active").removeClass('active');
+        });
+    </script>
 </body>
 </html>
