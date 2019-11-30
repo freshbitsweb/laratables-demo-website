@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
         integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
         crossorigin="anonymous">
+
+    <style>
+        #example-name-display {
+            color: orangered;
+        }
+    </style>
 </head>
 <body>
     <div class="container" id="header">
@@ -64,6 +70,68 @@
     <script>
         $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link), .dropdown-item").click(function(){
             $(".dropdown-item.active").removeClass('active');
+        });
+    </script>
+
+    <script>
+        // Basic Example text Display
+        $(document).on('click','#basic-dropdown-select',function(){
+            $("#customize-text").addClass("d-none");
+            $("#one-to-one-text").addClass("d-none");
+            $("#one-to-many-text").addClass("d-none");
+            $("#many-to-many-text").addClass("d-none");
+            $("#many-to-many-poly-text").addClass("d-none");
+            $("#basic-text").removeClass("d-none");
+        });
+
+        // Customize Column Example text Display
+        $(document).on('click','#custom-dropdown-select',function(){
+            $("#basic-text").addClass("d-none");
+            $("#one-to-one-text").addClass("d-none");
+            $("#one-to-many-text").addClass("d-none");
+            $("#many-to-many-text").addClass("d-none");
+            $("#many-to-many-poly-text").addClass("d-none");
+            $("#customize-text").removeClass("d-none");
+        });
+
+        // One to One Example text Display
+        $(document).on('click','#one-to-one-dropdown-select',function(){
+            $("#basic-text").addClass("d-none");
+            $("#customize-text").addClass("d-none");
+            $("#one-to-many-text").addClass("d-none");
+            $("#many-to-many-text").addClass("d-none");
+            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-one-text").removeClass("d-none");
+        });
+
+        // One to Many Example text Display
+        $(document).on('click','#one-to-many-dropdown-select',function(){
+            $("#basic-text").addClass("d-none");
+            $("#customize-text").addClass("d-none");
+            $("#one-to-one-text").addClass("d-none");
+            $("#many-to-many-text").addClass("d-none");
+            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-many-text").removeClass("d-none");
+        });
+
+        // Many to Many Example text Display
+        $(document).on('click','#many-to-many-dropdown-select',function(){
+            $("#basic-text").addClass("d-none");
+            $("#customize-text").addClass("d-none");
+            $("#one-to-one-text").addClass("d-none");
+            $("#one-to-many-text").addClass("d-none");
+            $("#many-to-many-poly-text").addClass("d-none");
+            $("#many-to-many-text").removeClass("d-none");
+        });
+
+        // Many to Many Poly Example text Display
+        $(document).on('click','#many-to-many-poly-dropdown-select',function(){
+            $("#basic-text").addClass("d-none");
+            $("#customize-text").addClass("d-none");
+            $("#one-to-one-text").addClass("d-none");
+            $("#one-to-many-text").addClass("d-none");
+            $("#many-to-many-text").addClass("d-none");
+            $("#many-to-many-poly-text").removeClass("d-none");
         });
     </script>
 </body>
