@@ -69,7 +69,48 @@
                 <h1 id="one-to-many-poly-text" class="d-none">One To Many Polymorphic</h1>
             </div>
         </div>
-        <div class="card-body"></div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="basic">
+
+                        @include('navtab.basic')
+
+                    </div>
+
+                    <div class="tab-pane" id="customize">
+
+                        @include('navtab.customize')
+
+                    </div>
+
+                    <div class="tab-pane" id="onetoone">
+
+                        @include('navtab.one_to_one')
+
+                    </div>
+
+                    <div class="tab-pane" id="onetomany">
+
+                        @include('navtab.one_to_many')
+
+                    </div>
+
+                    <div class="tab-pane" id="manytomany">
+
+                        @include('navtab.many_to_many')
+
+                    </div>
+
+                    <div class="tab-pane" id="onetomanypoly">
+
+                        @include('navtab.one_to_many_poly')
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
