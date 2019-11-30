@@ -75,7 +75,7 @@
         aria-labelledby="nav-client-tab-one-to-many-poly"
     >
 
-        <h1>client code</h1>
+        @include('navtab.codes.oneToManyPoly.client')
 
     </div>
 
@@ -85,7 +85,7 @@
         aria-labelledby="nav-model-tab-one-to-many-poly"
     >
 
-        <h1>model code</h1>
+        @include('navtab.codes.oneToManyPoly.model')
 
     </div>
 
@@ -95,7 +95,7 @@
         aria-labelledby="nav-controller-tab-one-to-many-poly"
     >
 
-        <h1>controller code</h1>
+        @include('navtab.codes.oneToManyPoly.controller')
 
     </div>
 

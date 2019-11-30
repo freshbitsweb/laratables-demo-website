@@ -86,7 +86,7 @@
         aria-labelledby="nav-client-tab-one-to-many"
     >
 
-        <h1>client code</h1>
+        @include('navtab.codes.oneToMany.client')
 
     </div>
 
@@ -96,7 +96,7 @@
         aria-labelledby="nav-model-tab-one-to-many"
     >
 
-        <h1>model code</h1>
+        @include('navtab.codes.oneToMany.model')
 
     </div>
 
@@ -106,7 +106,7 @@
         aria-labelledby="nav-controller-tab-one-to-many"
     >
 
-        <h1>controller code</h1>
+        @include('navtab.codes.oneToMany.controller')
 
     </div>
 
@@ -116,7 +116,7 @@
         aria-labelledby="nav-config-tab-one-to-many"
     >
 
-        <h1>config code</h1>
+        @include('navtab.codes.oneToMany.config')
 
     </div>
 

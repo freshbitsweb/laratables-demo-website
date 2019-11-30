@@ -86,7 +86,7 @@
         aria-labelledby="nav-client-tab-customize"
     >
 
-        <h1>client code</h1>
+        @include('navtab.codes.customize.client')
 
     </div>
 
@@ -96,7 +96,7 @@
         aria-labelledby="nav-model-tab-customize"
     >
 
-        <h1>model code</h1>
+        @include('navtab.codes.customize.model')
 
     </div>
 
@@ -106,7 +106,7 @@
         aria-labelledby="nav-controller-tab-customize"
     >
 
-        <h1>controller code</h1>
+        @include('navtab.codes.customize.controller')
 
     </div>
 
@@ -116,7 +116,7 @@
         aria-labelledby="nav-config-tab-customize"
     >
 
-        <h1>config code</h1>
+        @include('navtab.codes.customize.config')
 
     </div>
 

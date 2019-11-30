@@ -75,7 +75,7 @@
         aria-labelledby="nav-client-tab-many-to-many"
     >
 
-        <h1>config code</h1>
+        @include('navtab.codes.manyToMany.client')
 
     </div>
 
@@ -85,7 +85,7 @@
         aria-labelledby="nav-model-tab-many-to-many"
     >
 
-        <h1>model code</h1>
+        @include('navtab.codes.manyToMany.model')
 
     </div>
 
@@ -95,7 +95,7 @@
         aria-labelledby="nav-controller-tab-many-to-many"
     >
 
-        <h1>controller code</h1>
+        @include('navtab.codes.manyToMany.controller')
 
     </div>
 

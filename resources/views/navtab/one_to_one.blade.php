@@ -75,7 +75,7 @@
         aria-labelledby="nav-client-tab"
     >
 
-        <h1>client code</h1>
+        @include('navtab.codes.oneToOne.client')
 
     </div>
 
@@ -85,7 +85,7 @@
         aria-labelledby="nav-model-tab"
     >
 
-        <h1>model code</h1>
+        @include('navtab.codes.oneToOne.model')
 
     </div>
 
@@ -95,7 +95,7 @@
         aria-labelledby="nav-controller-tab"
     >
 
-        <h1>controller code</h1>
+        @include('navtab.codes.oneToOne.controller')
 
     </div>
 
