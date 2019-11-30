@@ -65,7 +65,7 @@
         aria-labelledby="nav-client-tab-basic"
     >
 
-        <h1>client code</h1>
+        @include('navtab.codes.basic.client')
 
     </div>
 
@@ -75,7 +75,7 @@
         aria-labelledby="nav-controller-tab-basic"
     >
 
-        <h1>controller code</h1>
+        @include('navtab.codes.basic.controller')
 
     </div>
 
