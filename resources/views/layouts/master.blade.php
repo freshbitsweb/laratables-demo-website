@@ -27,7 +27,7 @@
         }
     </style>
 </head>
-<body>
+<body class="body-color">
     <div class="container" id="header">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
