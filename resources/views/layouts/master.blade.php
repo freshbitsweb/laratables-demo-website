@@ -27,6 +27,10 @@
         .body-color {
             background-color: wheat;
         }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            background-color: #f0f1f2;
+        }
     </style>
 </head>
 <body class="body-color">
