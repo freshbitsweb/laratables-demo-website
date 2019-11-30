@@ -1,0 +1,111 @@
+<nav>
+    <div class="nav nav-tabs" id="nav-tab-many-to-many-poly" role="tablist">
+
+        <a class="nav-item nav-link active"
+            id="nav-image-tab-many-to-many-poly"
+            data-toggle="tab"
+            href="#nav-image-many-to-many-poly"
+            role="tab"
+            aria-controls="nav-image"
+            aria-selected="false"
+        >
+            ScreenShots
+        </a>
+
+        <a class="nav-item nav-link"
+            id="nav-client-tab-many-to-many-poly"
+            data-toggle="tab"
+            href="#nav-client-many-to-many-poly"
+            role="tab"
+            aria-controls="nav-client"
+            aria-selected="false"
+        >
+            Client Side
+        </a>
+
+        <a class="nav-item nav-link"
+            id="nav-model-tab-many-to-many-poly"
+            data-toggle="tab"
+            href="#nav-model-many-to-many-poly"
+            role="tab"
+            aria-controls="nav-model"
+            aria-selected="false"
+        >
+            Model
+        </a>
+
+        <a class="nav-item nav-link"
+            id="nav-controller-tab-many-to-many-poly"
+            data-toggle="tab"
+            href="#nav-controller-many-to-many-poly"
+            role="tab"
+            aria-controls="nav-controller"
+            aria-selected="false"
+        >
+            Controller
+        </a>
+
+        <a class="nav-item nav-link"
+            id="nav-output-tab-many-to-many-poly"
+            data-toggle="tab"
+            href="#nav-output-many-to-many-poly"
+            role="tab"
+            aria-controls="nav-output"
+            aria-selected="false"
+        >
+            Output
+        </a>
+
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent-many-to-many-poly">
+    <div class="tab-pane fade show active"
+        id="nav-image-many-to-many-poly"
+        role="tabpanel"
+        aria-labelledby="nav-image-tab-many-to-many-poly"
+    >
+
+        <h1>screenshot</h1>
+
+    </div>
+
+    <div class="tab-pane fade"
+        id="nav-client-many-to-many-poly"
+        role="tabpanel"
+        aria-labelledby="nav-client-tab-many-to-many-poly"
+    >
+
+        <h1>client code</h1>
+
+    </div>
+
+    <div class="tab-pane fade"
+        id="nav-model-many-to-many-poly"
+        role="tabpanel"
+        aria-labelledby="nav-model-tab-many-to-many-poly"
+    >
+
+        <h1>model code</h1>
+
+    </div>
+
+    <div class="tab-pane fade"
+        id="nav-controller-many-to-many-poly"
+        role="tabpanel"
+        aria-labelledby="nav-controller-tab-many-to-many-poly"
+    >
+
+        <h1>controller code</h1>
+
+    </div>
+
+    <div class="tab-pane fade"
+        id="nav-output-many-to-many-poly"
+        role="tabpanel"
+        aria-labelledby="nav-output-tab-many-to-many-poly"
+    >
+
+        <h1>Actual Output</h1>
+
+    </div>
+</div>

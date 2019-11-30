@@ -52,9 +52,9 @@
                         Many-To-Many
                     </a>
                     <a class="dropdown-item"
-                        id="many-to-many-poly-dropdown-select"
+                        id="one-to-many-poly-dropdown-select"
                         data-toggle="tab"
-                        href="#manytomanypoly"
+                        href="#onetomanypoly"
                     >
                         One-To-Many Polymorphic
                     </a>
@@ -66,7 +66,7 @@
                 <h1 id="one-to-one-text" class="d-none">One to One</h1>
                 <h1 id="one-to-many-text" class="d-none">One To Many</h1>
                 <h1 id="many-to-many-text" class="d-none">Many To Many</h1>
-                <h1 id="many-to-many-poly-text" class="d-none">Many To Many Polymorphic</h1>
+                <h1 id="one-to-many-poly-text" class="d-none">One To Many Polymorphic</h1>
             </div>
         </div>
         <div class="card-body"></div>

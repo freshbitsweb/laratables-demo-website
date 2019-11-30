@@ -88,7 +88,7 @@
             $("#one-to-one-text").addClass("d-none");
             $("#one-to-many-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
-            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-many-poly-text").addClass("d-none");
             $("#basic-text").removeClass("d-none");
         });
 
@@ -98,7 +98,7 @@
             $("#one-to-one-text").addClass("d-none");
             $("#one-to-many-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
-            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-many-poly-text").addClass("d-none");
             $("#customize-text").removeClass("d-none");
         });
 
@@ -108,7 +108,7 @@
             $("#customize-text").addClass("d-none");
             $("#one-to-many-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
-            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-many-poly-text").addClass("d-none");
             $("#one-to-one-text").removeClass("d-none");
         });
 
@@ -118,7 +118,7 @@
             $("#customize-text").addClass("d-none");
             $("#one-to-one-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
-            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-many-poly-text").addClass("d-none");
             $("#one-to-many-text").removeClass("d-none");
         });
 
@@ -128,18 +128,18 @@
             $("#customize-text").addClass("d-none");
             $("#one-to-one-text").addClass("d-none");
             $("#one-to-many-text").addClass("d-none");
-            $("#many-to-many-poly-text").addClass("d-none");
+            $("#one-to-many-poly-text").addClass("d-none");
             $("#many-to-many-text").removeClass("d-none");
         });
 
         // Many to Many Poly Example text Display
-        $(document).on('click','#many-to-many-poly-dropdown-select',function(){
+        $(document).on('click','#one-to-many-poly-dropdown-select',function(){
             $("#basic-text").addClass("d-none");
             $("#customize-text").addClass("d-none");
             $("#one-to-one-text").addClass("d-none");
             $("#one-to-many-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
-            $("#many-to-many-poly-text").removeClass("d-none");
+            $("#one-to-many-poly-text").removeClass("d-none");
         });
     </script>
 </body>
