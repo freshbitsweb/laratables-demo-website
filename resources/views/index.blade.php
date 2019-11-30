@@ -8,6 +8,7 @@
         <div class="card-header">
             <div class="dropdown" style="float:left">
                 <button class="btn btn-primary dropdown-toggle"
+                    id="btn-align"
                     type="button"
                     data-toggle="dropdown"
                 >

@@ -17,6 +17,10 @@
         #example-name-display {
             color: orangered;
         }
+
+        #btn-align {
+            margin-top: 09px;
+        }
     </style>
 </head>
 <body>
