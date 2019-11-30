@@ -13,6 +13,8 @@
         integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/prism_php.css">
+
     <style>
         #example-name-display {
             color: orangered;
@@ -74,6 +76,8 @@
         integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
         crossorigin="anonymous">
     </script>
+
+    <script src="js/prism_php.js"></script>
 
     <script>
         $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link), .dropdown-item").click(function(){
