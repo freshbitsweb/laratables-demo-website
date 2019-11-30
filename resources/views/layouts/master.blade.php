@@ -21,6 +21,10 @@
         #btn-align {
             margin-top: 09px;
         }
+
+        .body-color {
+            background-color: wheat;
+        }
     </style>
 </head>
 <body>
