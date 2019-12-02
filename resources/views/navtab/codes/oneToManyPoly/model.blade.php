@@ -27,9 +27,8 @@
         */
         public static function laratablesUrl($post)
         {
-            return "<img src='$post->url'>";
+            return "<<pre><code>img src</code></pre>='$post->url'>";
         }
-
         /**
          * searching the postLiked column data.
          *
