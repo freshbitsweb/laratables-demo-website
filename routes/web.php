@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'LaratableController@index');
+Route::get('basic', 'LaratableController@basicLaratableData')->name('basic_laratable');

@@ -84,8 +84,8 @@
         role="tabpanel"
         aria-labelledby="nav-output-tab-basic"
     >
-
-        <h1>Actual Output</h1>
+        <br>
+        @include('navtab.output.basic.basic_laratable')
 
     </div>
 
