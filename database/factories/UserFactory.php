@@ -25,3 +25,9 @@ $factory->define(User::class, function (Faker $faker) {
         'country_id' => $faker->unique()->numberBetween(1,20),
     ];
 });
+
+$factory->afterCreating(App\User::class, function ($user, $faker) {
+
+    $roles = App\Role::inRandomOrder()->limit(mt_rand(1, 2))->get(['id'])->pluck('id');
+    $user->roles()->attach($roles);
+});
