@@ -105,7 +105,8 @@
         aria-labelledby="nav-output-tab"
     >
 
-        <h1>Actual Output</h1>
+        <br>
+        @include('navtab.output.oneToOne.one_to_one')
 
     </div>
 </div>

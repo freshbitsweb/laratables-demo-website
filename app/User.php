@@ -16,4 +16,17 @@ class User extends Authenticatable
      * @var bool
     */
     public $timestamps = false;
+
+    /**
+     * Get the Country that owns the users
+     *
+     *
+     * @param Type $var Description
+     * @return type
+     * @throws conditon
+    **/
+    public function country()
+    {
+        return $this->belongsTo('App\Country');
+    }
 }

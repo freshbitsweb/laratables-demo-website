@@ -42,4 +42,15 @@ class LaratableController extends Controller
     {
         return Laratables::recordsOf(User::class, CustomUser::class);
     }
+
+    /**
+     * return data of the One To One Relationship datatables.
+     *
+     *
+     * @return Jason
+     **/
+    public function oneToOneData()
+    {
+        return Laratables::recordsOf(User::class);
+    }
 }
