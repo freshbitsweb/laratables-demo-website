@@ -13,3 +13,4 @@
 
 Route::get('/', 'LaratableController@index');
 Route::get('basic', 'LaratableController@basicLaratableData')->name('basic_laratable');
+Route::get('custom', 'LaratableController@customLaratableData')->name('custom_Laratable');

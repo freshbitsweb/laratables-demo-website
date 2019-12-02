@@ -126,7 +126,8 @@
         aria-labelledby="nav-output-tab-customize"
     >
 
-        <h1>Actual Output</h1>
+        <br>
+        @include('navtab.output.customize.custom_Laratable')
 
     </div>
 
