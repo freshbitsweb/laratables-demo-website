@@ -126,7 +126,8 @@
         aria-labelledby="nav-output-tab-one-to-many"
     >
 
-        <h1>Actual Output</h1>
+        <br>
+        @include('navtab.output.oneToMany.one_to_many')
 
     </div>
 </div>

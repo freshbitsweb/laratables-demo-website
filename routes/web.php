@@ -15,3 +15,4 @@ Route::get('/', 'LaratableController@index');
 Route::get('basic', 'LaratableController@basicLaratableData')->name('basic_laratable');
 Route::get('custom', 'LaratableController@customLaratableData')->name('custom_Laratable');
 Route::get('oneToOne', 'LaratableController@oneToOneData')->name('one_to_one');
+Route::get('oneToMany', 'LaratableController@oneToManyData')->name('one_to_many');

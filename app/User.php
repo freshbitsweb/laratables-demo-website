@@ -29,4 +29,12 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\Country');
     }
+
+    /**
+     * Get the comments for the User.
+    */
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
 }
