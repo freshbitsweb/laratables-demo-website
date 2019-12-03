@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use App\Post;
-use Illuminate\Http\Request;
-use Freshbitsweb\Laratables\Laratables;
+use App\User;
 use App\Laratables\CustomUser;
 use App\Laratables\OneToManyUser;
 use App\Laratables\ManyToManyUser;
 use App\Laratables\ManyToManyPolyUser;
+use Freshbitsweb\Laratables\Laratables;
 
 class LaratableController extends Controller
 {
