@@ -105,7 +105,8 @@
         aria-labelledby="nav-output-tab-one-to-many-poly"
     >
 
-        <h1>Actual Output</h1>
+        <br>
+        @include('navtab.output.manyToManyPoly.many_to_many_poly')
 
     </div>
 </div>

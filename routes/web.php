@@ -17,3 +17,4 @@ Route::get('custom', 'LaratableController@customLaratableData')->name('custom_La
 Route::get('oneToOne', 'LaratableController@oneToOneData')->name('one_to_one');
 Route::get('oneToMany', 'LaratableController@oneToManyData')->name('one_to_many');
 Route::get('manyToManyData', 'LaratableController@manyToManyData')->name('many_to_many');
+Route::get('display', 'LaratableController@oneToManyPolyData')->name('one_to_many_poly');

@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Post;
 use Illuminate\Http\Request;
 use Freshbitsweb\Laratables\Laratables;
 use App\Laratables\CustomUser;
 use App\Laratables\OneToManyUser;
 use App\Laratables\ManyToManyUser;
+use App\Laratables\ManyToManyPolyUser;
 
 class LaratableController extends Controller
 {
@@ -76,5 +78,16 @@ class LaratableController extends Controller
     public function manyToManyData()
     {
         return Laratables::recordsOf(User::class, ManyToManyUser::class);
+    }
+
+    /**
+     * return data of the One To Many Polymorphic Relationship datatables.
+     *
+     *
+     * @return Jason
+    **/
+    public function oneToManyPolyData()
+    {
+        return Laratables::recordsOf(Post::class, ManyToManyPolyUser::class);
     }
 }
