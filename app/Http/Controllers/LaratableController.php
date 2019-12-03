@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Freshbitsweb\Laratables\Laratables;
 use App\Laratables\CustomUser;
 use App\Laratables\OneToManyUser;
+use App\Laratables\ManyToManyUser;
 
 class LaratableController extends Controller
 {
@@ -64,5 +65,16 @@ class LaratableController extends Controller
     public function oneToManyData()
     {
         return Laratables::recordsOf(User::class, OneToManyUser::class);
+    }
+
+    /**
+     * return data of the Many To Many Relationship datatables.
+     *
+     *
+     * @return Jason
+     **/
+    public function manyToManyData()
+    {
+        return Laratables::recordsOf(User::class, ManyToManyUser::class);
     }
 }

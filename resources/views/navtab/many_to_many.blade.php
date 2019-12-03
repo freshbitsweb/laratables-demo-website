@@ -105,7 +105,8 @@
         aria-labelledby="nav-output-tab-many-to-many"
     >
 
-        <h1>Actual Output</h1>
+        <br>
+        @include('navtab.output.manyToMany.many_to_many')
 
     </div>
 </div>
