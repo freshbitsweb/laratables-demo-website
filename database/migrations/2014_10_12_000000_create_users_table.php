@@ -19,9 +19,6 @@ class CreateUsersTable extends Migration
             $table->string('last_name');
             $table->date('start_date');
             $table->decimal('salary');
-            $table->integer('country_id')->unsigned();
-
-            $table->foreign('country_id')->references('id')->on('countries');
         });
     }
 
