@@ -42,7 +42,6 @@
             return $query->orWhereHas('likes', function ($query) use ($searchValue) {
                 $query->where('name', 'like', "%" .$searchValue. "%");
             });
-            return $query;
         }
     </code>
 </pre>

@@ -31,7 +31,6 @@
             return $query->orWhereHas('comments', function ($query) use ($searchValue) {
                 $query->where('content', 'like', "%". $searchValue ."%");
             });
-            return $query;
         }
 
 
@@ -113,7 +112,6 @@
         {
             return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
                 ->orWhere('last_name', 'like', '%'. $searchValue. '%');
-            return $query;
         }
     </code>
 </pre>
