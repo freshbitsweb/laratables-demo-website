@@ -22,9 +22,9 @@ class ManyToManyPolyUser extends User
      * @param \App\Post
      * @return string
     */
-    public static function laratablesUrl($post)
+    public static function laratablesImageUrl($post)
     {
-        return "<img src='$post->url'>";
+        return "<img src='$post->image_url'>";
     }
 
     /**

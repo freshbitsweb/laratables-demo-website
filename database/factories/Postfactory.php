@@ -16,7 +16,7 @@ $urlArray = [
 $factory->define(Post::class, function (Faker $faker) use($urlArray) {
     return [
             'title' => $title = $faker->sentence($nbWords = 1, $variableNbWords = true),
-            'url' => $urlArray[array_rand($urlArray)]."/?text=$title",
+            'image_url' => $urlArray[array_rand($urlArray)]."/?text=$title",
         ];
 });
 
