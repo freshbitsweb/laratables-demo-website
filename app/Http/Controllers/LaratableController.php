@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Laratables\CustomUser;
-use App\Laratables\OneToManyUser;
-use App\Laratables\ManyToManyPolyUser;
 use App\Laratables\ManyToManyUser;
+use App\Laratables\OneToManyUser;
 use App\Post;
 use App\User;
 use Freshbitsweb\Laratables\Laratables;
@@ -40,7 +39,7 @@ class LaratableController extends Controller
      *
      * @param Type $var Description
      * @return Json
-     **/
+    **/
     public function customLaratableData()
     {
         return Laratables::recordsOf(User::class, CustomUser::class);
@@ -51,7 +50,7 @@ class LaratableController extends Controller
      *
      *
      * @return Jason
-     **/
+    **/
     public function oneToOneData()
     {
         return Laratables::recordsOf(User::class);
@@ -73,7 +72,7 @@ class LaratableController extends Controller
      *
      *
      * @return Jason
-     **/
+    **/
     public function manyToManyData()
     {
         return Laratables::recordsOf(User::class, ManyToManyUser::class);
@@ -87,6 +86,6 @@ class LaratableController extends Controller
     **/
     public function oneToManyPolyData()
     {
-        return Laratables::recordsOf(Post::class, ManyToManyPolyUser::class);
+        return Laratables::recordsOf(Post::class);
     }
 }
