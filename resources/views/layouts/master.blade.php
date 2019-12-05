@@ -20,11 +20,8 @@
     >
 
     <style>
-        #example-name-display {
-            color: orangered;
-        }
 
-        #btn-align {
+        #btn-align, #example-name-display {
             margin-top: 09px;
         }
 
