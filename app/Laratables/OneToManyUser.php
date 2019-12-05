@@ -16,9 +16,19 @@ class OneToManyUser extends User
         return $user->start_date = date('d-m-Y', strtotime($user->start_date));
     }
 
+    /**
+     * Eager load comments value of the user.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+    */
+    public static function laratablesQueryConditions($query)
+    {
+        return $query->with('comments');
+    }
 
     /**
-     * Display the relationship data in custom column(userComments).
+     * Display the relationship data in custom column(user_ comments).
      *
      * @param \App\User
      * @return string
@@ -41,12 +51,11 @@ class OneToManyUser extends User
         return $query->orWhereHas('comments', function ($query) use ($searchValue) {
             $query->where('content', 'like', "%". $searchValue ."%");
         });
-        return $query;
     }
 
 
     /**
-     * Display currency symbol with format in salary column value.
+     * Display currency symbol with format in salary column.
      *
      * @param \App\User
      * @return string
@@ -63,7 +72,7 @@ class OneToManyUser extends User
      * @param \Illuminate\Database\Eloquent\Builder
      * @param string search term
      * @return \Illuminate\Database\Eloquent\Builder
-     */
+    */
     public static function laratablesSearchSalary($query, $searchValue)
     {
         if ($searchSalary = preg_replace('/[^A-Za-z0-9\-]/', '', $searchValue)) {
@@ -89,7 +98,7 @@ class OneToManyUser extends User
      * Additional merged columns to be loaded for datatables.
      *
      * @return array
-     */
+    */
     public static function laratablesAdditionalColumns()
     {
         return ['first_name', 'last_name'];
@@ -100,7 +109,7 @@ class OneToManyUser extends User
      * first_name column should be used for sorting when Name column is selected in Datatables.
      *
      * @return string
-     */
+    */
     public static function laratablesOrderName()
     {
         return 'first_name';
@@ -113,11 +122,10 @@ class OneToManyUser extends User
      * @param \Illuminate\Database\Eloquent\Builder
      * @param string search term
      * @param \Illuminate\Database\Eloquent\Builder
-     */
+    */
     public static function laratablesSearchName($query, $searchValue)
     {
         return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
             ->orWhere('last_name', 'like', '%'. $searchValue. '%');
-        return $query;
     }
 }

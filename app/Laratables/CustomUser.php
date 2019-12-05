@@ -35,7 +35,7 @@ class CustomUser extends User
      * @param \Illuminate\Database\Eloquent\Builder
      * @param string search term
      * @return \Illuminate\Database\Eloquent\Builder
-     */
+    */
     public static function laratablesSearchSalary($query, $searchValue)
     {
         if ($searchSalary = filter_var($searchValue, FILTER_SANITIZE_NUMBER_INT)) {
@@ -49,7 +49,7 @@ class CustomUser extends User
      *
      * @param \App\User
      * @return string
-     */
+    */
     public static function laratablesCustomName($user)
     {
         return $user->first_name.' '.$user->last_name;
@@ -59,7 +59,7 @@ class CustomUser extends User
      * Additional merged columns to be loaded for datatables.
      *
      * @return array
-     */
+    */
     public static function laratablesAdditionalColumns()
     {
         return ['first_name', 'last_name'];
@@ -69,7 +69,7 @@ class CustomUser extends User
      * first_name column should be used for sorting when Name column is selected in Datatables.
      *
      * @return string
-     */
+    */
     public static function laratablesOrderName()
     {
         return 'first_name';
@@ -81,7 +81,7 @@ class CustomUser extends User
      * @param \Illuminate\Database\Eloquent\Builder
      * @param string search term
      * @param \Illuminate\Database\Eloquent\Builder
-     */
+    */
     public static function laratablesSearchName($query, $searchValue)
     {
         return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')

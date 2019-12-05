@@ -6,7 +6,18 @@ use App\User;
 class ManyToManyUser extends User
 {
     /**
-     * Display the relationship data in custom column(UserRoles).
+     * Eager load roles value of the user.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+    */
+    public static function laratablesQueryConditions($query)
+    {
+        return $query->with('roles');
+    }
+
+    /**
+     * Display the relationship data in custom column(user_roles).
      *
      * @param \App\User
      * @return string
@@ -22,12 +33,11 @@ class ManyToManyUser extends User
      * @param \Illuminate\Database\Eloquent\Builder
      * @param string search term
      * @return \Illuminate\Database\Eloquent\Builder
-     */
+    */
     public static function laratablesSearchUserRoles($query, $searchValue)
     {
         return $query->orWhereHas('roles', function ($query) use ($searchValue) {
             $query->where('name', 'like', "%". $searchValue ."%");
         });
-        return $query;
     }
 }
