@@ -13,8 +13,8 @@
 
 Route::get('/', 'LaratableController@index');
 Route::get('basic', 'LaratableController@basicLaratableData')->name('basic_laratable');
-Route::get('custom', 'LaratableController@customLaratableData')->name('custom_Laratable');
-Route::get('oneToOne', 'LaratableController@oneToOneData')->name('one_to_one');
-Route::get('oneToMany', 'LaratableController@oneToManyData')->name('one_to_many');
-Route::get('manyToManyData', 'LaratableController@manyToManyData')->name('many_to_many');
+Route::get('custom', 'LaratableController@customLaratableData')->name('custom_laratable');
+Route::get('one-to-one', 'LaratableController@oneToOneData')->name('one_to_one');
+Route::get('one-to-Many', 'LaratableController@oneToManyData')->name('one_to_many');
+Route::get('many-to-many', 'LaratableController@manyToManyData')->name('many_to_many');
 Route::get('display', 'LaratableController@oneToManyPolyData')->name('one_to_many_poly');

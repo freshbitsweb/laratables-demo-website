@@ -17,7 +17,7 @@
                 columns: [
                     { name: 'title' },
                     { name: 'image_url', searchable: false },
-                    { name: 'postLiked', orderable: false },
+                    { name: 'post_liked', orderable: false },
                 ],
             });
         });
