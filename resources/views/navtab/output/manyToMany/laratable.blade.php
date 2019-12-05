@@ -1,4 +1,4 @@
-    <table id="many-to-many" class="table table-bordered table-striped" style="width:100%">
+    <table id="many-to-many-laratable" class="table table-bordered table-striped" style="width:100%">
         <thead class="thead-dark">
             <tr>
                 <th>First Name</th>
@@ -13,7 +13,7 @@
 @push('scripts')
     <script>
         $(document).ready(function(){
-            $("#many-to-many").DataTable({
+            $("#many-to-many-laratable").DataTable({
                 serverSide: true,
                 ajax: "{{ route('many_to_many') }}",
                 columns: [

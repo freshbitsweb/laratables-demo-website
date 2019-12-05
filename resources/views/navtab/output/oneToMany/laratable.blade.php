@@ -1,4 +1,4 @@
-    <table id="one-to-many" class="table table-bordered table-striped" style="width:100%">
+    <table id="one-to-many-laratable" class="table table-bordered table-striped" style="width:100%">
         <thead class="thead-dark">
             <tr>
                 <th>Name</th>
@@ -12,7 +12,7 @@
 @push('scripts')
     <script>
         $(document).ready(function(){
-            $("#one-to-many").DataTable({
+            $("#one-to-many-laratable").DataTable({
                 serverSide: true,
                 ajax: "{{ route('one_to_many') }}",
                 columns: [

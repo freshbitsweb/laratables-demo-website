@@ -1,4 +1,4 @@
-    <table id="one-to-many-poly" class="table table-bordered table-striped" style="width:100%">
+    <table id="one-to-many-poly-laratable" class="table table-bordered table-striped" style="width:100%">
         <thead class="thead-dark">
             <tr>
                 <th>Post Title</th>
@@ -11,7 +11,7 @@
 @push('scripts')
     <script>
         $(document).ready(function(){
-            $("#one-to-many-poly").DataTable({
+            $("#one-to-many-poly-laratable").DataTable({
                 serverSide: true,
                 ajax: "{{ route('one_to_many_poly') }}",
                 columns: [
