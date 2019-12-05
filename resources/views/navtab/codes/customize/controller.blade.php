@@ -13,7 +13,7 @@
             **/
             public function index()
             {
-                return view('custom_Laratable');
+                return view('custom_laratable');
             }
 
             /**

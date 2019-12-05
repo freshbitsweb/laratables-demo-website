@@ -20,7 +20,7 @@
         }
 
         /**
-         * Display the relationship data in custom column(post_Liked).
+         * Display the relationship data in custom column(post_liked).
          *
          * @param \App\Post
          * @return string
@@ -42,7 +42,7 @@
         }
 
         /**
-         * searching the post_Liked column data.
+         * searching the post_liked column data.
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term

@@ -20,7 +20,7 @@
         }
 
         /**
-         * Display the relationship data in custom column(user_ comments).
+         * Display the relationship data in custom column(user_comments).
          *
          * @param \App\User
          * @return string
