@@ -56,8 +56,11 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">
-                                Demo Source
+                            <a class="nav-link"
+                                href="https://github.com/freshbitsweb/laratables"
+                                target="_blank"
+                            >
+                                Package Source
                             </a>
                         </li>
                     </ul>
