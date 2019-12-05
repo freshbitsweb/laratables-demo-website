@@ -85,7 +85,7 @@
         aria-labelledby="nav-output-tab-basic"
     >
         <br>
-        @include('navtab.output.basic.basic_laratable')
+        @include('navtab.output.basic.laratable')
 
     </div>
 

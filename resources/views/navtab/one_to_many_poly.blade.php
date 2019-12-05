@@ -106,7 +106,7 @@
     >
 
         <br>
-        @include('navtab.output.manyToManyPoly.many_to_many_poly')
+        @include('navtab.output.oneToManyPoly.laratable')
 
     </div>
 </div>

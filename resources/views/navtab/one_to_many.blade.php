@@ -127,7 +127,7 @@
     >
 
         <br>
-        @include('navtab.output.oneToMany.one_to_many')
+        @include('navtab.output.oneToMany.laratable')
 
     </div>
 </div>

@@ -106,7 +106,7 @@
     >
 
         <br>
-        @include('navtab.output.oneToOne.one_to_one')
+        @include('navtab.output.oneToOne.laratable')
 
     </div>
 </div>

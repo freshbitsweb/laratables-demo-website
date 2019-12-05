@@ -127,7 +127,7 @@
     >
 
         <br>
-        @include('navtab.output.customize.custom_Laratable')
+        @include('navtab.output.customize.laratable')
 
     </div>
 

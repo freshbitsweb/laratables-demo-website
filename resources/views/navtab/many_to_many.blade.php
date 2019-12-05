@@ -106,7 +106,7 @@
     >
 
         <br>
-        @include('navtab.output.manyToMany.many_to_many')
+        @include('navtab.output.manyToMany.laratable')
 
     </div>
 </div>
