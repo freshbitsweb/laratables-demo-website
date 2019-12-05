@@ -17,12 +17,12 @@
             }
 
             /**
-             * return data of the basic datatables.
+             * return data of the One To Many Polymorphic Relationship datatables.
              *
              *
              * @return type Json
             **/
-            public function basicLaratableData()
+            public function oneToManyPolyData()
             {
                 return Laratables::recordsOf(User::class);
             }

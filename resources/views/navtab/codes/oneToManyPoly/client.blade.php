@@ -6,8 +6,8 @@
                     ajax: "@{{ route('one_to_many_poly') }}",
                     columns: [
                         { name: 'title' },
-                        { name: 'url', searchable: false },
-                        { name: 'postLiked', orderable: false },
+                        { name: 'image_url', searchable: false },
+                        { name: 'post_liked', orderable: false },
                     ],
                 });
             });

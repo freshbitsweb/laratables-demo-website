@@ -9,7 +9,18 @@
         }
 
         /**
-         * Display the relationship data in custom column(UserRoles).
+         * Eager load roles value of the user.
+         *
+         * @param \Illuminate\Database\Eloquent\Builder
+         * @return \Illuminate\Database\Eloquent\Builder
+        */
+        public static function laratablesQueryConditions($query)
+        {
+            return $query->with('roles');
+        }
+
+        /**
+         * Display the relationship data in custom column(user_roles).
          *
          * @param \App\User
          * @return string

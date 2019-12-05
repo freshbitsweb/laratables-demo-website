@@ -17,12 +17,12 @@
             }
 
             /**
-             * return data of the basic datatables.
+             * return data of the One To One Relationship datatables.
              *
              *
              * @return type Json
             **/
-            public function basicLaratableData()
+            public function oneToOneData()
             {
                 return Laratables::recordsOf(User::class);
             }

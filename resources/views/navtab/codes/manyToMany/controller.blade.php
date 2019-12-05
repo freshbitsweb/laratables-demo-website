@@ -17,12 +17,12 @@
             }
 
             /**
-             * return data of the basic datatables.
+             * return data of the Many To Many Relationship datatables.
              *
              *
              * @return type Json
             **/
-            public function basicLaratableData()
+            public function manyToManyData()
             {
                 return Laratables::recordsOf(User::class);
             }

@@ -1,9 +1,9 @@
     <pre>
         <code class="language-javascript">
             $(document).ready(function(){
-                $("#basic-lara-table-table").DataTable({
+                $("#basic-laratable").DataTable({
                     serverSide: true,
-                    ajax: "@{{ route('basicLaraTable') }}",
+                    ajax: "@{{ route('basic_laratable') }}",
                     columns: [
                         { name: 'first_name' },
                         { name: 'last_name' },

@@ -9,7 +9,18 @@
         }
 
         /**
-         * Display the relationship data in custom column(userComments).
+         * Eager load comments value of the user.
+         *
+         * @param \Illuminate\Database\Eloquent\Builder
+         * @return \Illuminate\Database\Eloquent\Builder
+        */
+        public static function laratablesQueryConditions($query)
+        {
+            return $query->with('comments');
+        }
+
+        /**
+         * Display the relationship data in custom column(user_ comments).
          *
          * @param \App\User
          * @return string

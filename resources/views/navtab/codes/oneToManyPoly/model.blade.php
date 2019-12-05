@@ -1,7 +1,7 @@
 <pre>
     <code class="language-php">
         /**
-         * Get all of the post's comments.
+         * Get all of the post's likes.
         */
         public function likes()
         {
@@ -9,7 +9,18 @@
         }
 
         /**
-         * Display the relationship data in custom column(postLiked).
+         * Eager load likes value of the post.
+         *
+         * @param \Illuminate\Database\Eloquent\Builder
+         * @return \Illuminate\Database\Eloquent\Builder
+        */
+        public static function laratablesQueryConditions($query)
+        {
+            return $query->with('likes');
+        }
+
+        /**
+         * Display the relationship data in custom column(post_Liked).
          *
          * @param \App\Post
          * @return string
@@ -25,13 +36,13 @@
          * @param \App\Post
          * @return string
         */
-        public static function laratablesUrl($post)
+        public static function laratablesImageUrl($post)
         {
-            return "<<pre><code>img src</code></pre>='$post->url'>";
+            return "<<pre><code>img src</code></pre>='$post->image_url'>";
         }
 
         /**
-         * searching the postLiked column data.
+         * searching the post_Liked column data.
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term
