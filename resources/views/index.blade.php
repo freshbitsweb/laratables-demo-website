@@ -12,7 +12,7 @@
                     type="button"
                     data-toggle="dropdown"
                 >
-                    LaraTable Examples
+                    Laratable Examples
                 </button>
 
                 <div class="dropdown-menu">
@@ -61,12 +61,42 @@
                 </div>
             </div>
             <div style="float:right" id="example-name-display">
-                <h1 id="basic-text">Basic</h1>
-                <h1 id="customize-text" class="d-none">Customize Column</h1>
-                <h1 id="one-to-one-text" class="d-none">One to One</h1>
-                <h1 id="one-to-many-text" class="d-none">One To Many</h1>
-                <h1 id="many-to-many-text" class="d-none">Many To Many</h1>
-                <h1 id="one-to-many-poly-text" class="d-none">One To Many Polymorphic</h1>
+
+                <a href="https://github.com/freshbitsweb/laratables-demo-basic">
+                    <h3 id="basic-text">Basic <i class="fas fa-external-link-alt fa-xs"></i>
+                    </h3>
+                </a>
+
+
+                <a href="https://github.com/freshbitsweb/laratables-demo-customize-column">
+                    <h3 id="customize-text" class="d-none">Customize Column
+                        <i class="fas fa-external-link-alt fa-xs"></i>
+                    </h3>
+                </a>
+
+                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-one">
+                    <h3 id="one-to-one-text" class="d-none">One to One
+                        <i class="fas fa-external-link-alt fa-xs"></i>
+                    </h3>
+                </a>
+
+                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many">
+                    <h3 id="one-to-many-text" class="d-none">One To Many
+                        <i class="fas fa-external-link-alt fa-xs"></i>
+                    </h3>
+                </a>
+
+                <a href="https://github.com/freshbitsweb/laratables-demo-many-to-many">
+                    <h3 id="many-to-many-text" class="d-none">Many To Many
+                        <i class="fas fa-external-link-alt fa-xs"></i>
+                    </h3>
+                </a>
+
+                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many-polymorphic">
+                    <h3 id="one-to-many-poly-text" class="d-none">One To Many Polymorphic
+                        <i class="fas fa-external-link-alt fa-xs"></i>
+                    </h3>
+                </a>
             </div>
         </div>
         <div class="card-body">
