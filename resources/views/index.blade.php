@@ -33,28 +33,28 @@
                     <a class="dropdown-item"
                         id="one-to-one-dropdown-select"
                         data-toggle="tab"
-                        href="#onetoone"
+                        href="#one-to-one"
                     >
                         One-To-One
                     </a>
                     <a class="dropdown-item"
                         id="one-to-many-dropdown-select"
                         data-toggle="tab"
-                        href="#onetomany"
+                        href="#one-to-many"
                     >
                         One-To-Many
                     </a>
                     <a class="dropdown-item"
                         id="many-to-many-dropdown-select"
                         data-toggle="tab"
-                        href="#manytomany"
+                        href="#many-to-many"
                     >
                         Many-To-Many
                     </a>
                     <a class="dropdown-item"
                         id="one-to-many-poly-dropdown-select"
                         data-toggle="tab"
-                        href="#onetomanypoly"
+                        href="#one-to-many-poly"
                     >
                         One-To-Many Polymorphic
                     </a>
@@ -85,25 +85,25 @@
 
                     </div>
 
-                    <div class="tab-pane" id="onetoone">
+                    <div class="tab-pane" id="one-to-one">
 
                         @include('navtab.one_to_one')
 
                     </div>
 
-                    <div class="tab-pane" id="onetomany">
+                    <div class="tab-pane" id="one-to-many">
 
                         @include('navtab.one_to_many')
 
                     </div>
 
-                    <div class="tab-pane" id="manytomany">
+                    <div class="tab-pane" id="many-to-many">
 
                         @include('navtab.many_to_many')
 
                     </div>
 
-                    <div class="tab-pane" id="onetomanypoly">
+                    <div class="tab-pane" id="one-to-many-poly">
 
                         @include('navtab.one_to_many_poly')
 
