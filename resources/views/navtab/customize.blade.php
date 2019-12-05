@@ -76,7 +76,7 @@
         aria-labelledby="nav-image-tab-customize"
     >
 
-        <h1>screenshot</h1>
+        @include('navtab.screenshots.customize.images')
 
     </div>
 

@@ -76,7 +76,7 @@
         aria-labelledby="nav-image-tab-one-to-many"
     >
 
-        <h1>screenshot</h1>
+        @include('navtab.screenshots.oneToMany.images')
 
     </div>
 

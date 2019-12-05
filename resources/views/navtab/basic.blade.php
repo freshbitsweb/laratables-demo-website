@@ -55,7 +55,7 @@
         aria-labelledby="nav-image-tab-basic"
     >
 
-        <h1>screenshot</h1>
+        @include('navtab.screenshots.basic.images')
 
     </div>
 

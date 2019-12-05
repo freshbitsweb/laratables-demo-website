@@ -65,7 +65,7 @@
         aria-labelledby="nav-image-tab-one-to-many-poly"
     >
 
-        <h1>screenshot</h1>
+        @include('navtab.screenshots.oneToManyPoly.images')
 
     </div>
 
