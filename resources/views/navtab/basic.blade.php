@@ -13,17 +13,6 @@
         </a>
 
         <a class="nav-item nav-link"
-            id="nav-view-tab-basic"
-            data-toggle="tab"
-            href="#nav-view-basic"
-            role="tab"
-            aria-controls="nav-view"
-            aria-selected="false"
-        >
-            View
-        </a>
-
-        <a class="nav-item nav-link"
             id="nav-Controller-tab-basic"
             data-toggle="tab"
             href="#nav-controller-basic"
@@ -32,6 +21,17 @@
             aria-selected="false"
         >
             Controller
+        </a>
+
+        <a class="nav-item nav-link"
+            id="nav-view-tab-basic"
+            data-toggle="tab"
+            href="#nav-view-basic"
+            role="tab"
+            aria-controls="nav-view"
+            aria-selected="false"
+        >
+            View
         </a>
 
         <a class="nav-item nav-link"

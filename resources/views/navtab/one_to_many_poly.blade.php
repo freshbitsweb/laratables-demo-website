@@ -13,6 +13,17 @@
         </a>
 
         <a class="nav-item nav-link"
+            id="nav-controller-tab-one-to-many-poly"
+            data-toggle="tab"
+            href="#nav-controller-one-to-many-poly"
+            role="tab"
+            aria-controls="nav-controller"
+            aria-selected="false"
+        >
+            Controller
+        </a>
+
+        <a class="nav-item nav-link"
             id="nav-view-tab-one-to-many-poly"
             data-toggle="tab"
             href="#nav-view-one-to-many-poly"
@@ -32,17 +43,6 @@
             aria-selected="false"
         >
             Model
-        </a>
-
-        <a class="nav-item nav-link"
-            id="nav-controller-tab-one-to-many-poly"
-            data-toggle="tab"
-            href="#nav-controller-one-to-many-poly"
-            role="tab"
-            aria-controls="nav-controller"
-            aria-selected="false"
-        >
-            Controller
         </a>
 
         <a class="nav-item nav-link"
@@ -70,6 +70,16 @@
     </div>
 
     <div class="tab-pane fade"
+        id="nav-controller-one-to-many-poly"
+        role="tabpanel"
+        aria-labelledby="nav-controller-tab-one-to-many-poly"
+    >
+
+        @include('navtab.codes.oneToManyPoly.controller')
+
+    </div>
+
+    <div class="tab-pane fade"
         id="nav-view-one-to-many-poly"
         role="tabpanel"
         aria-labelledby="nav-view-tab-one-to-many-poly"
@@ -86,16 +96,6 @@
     >
 
         @include('navtab.codes.oneToManyPoly.model')
-
-    </div>
-
-    <div class="tab-pane fade"
-        id="nav-controller-one-to-many-poly"
-        role="tabpanel"
-        aria-labelledby="nav-controller-tab-one-to-many-poly"
-    >
-
-        @include('navtab.codes.oneToManyPoly.controller')
 
     </div>
 

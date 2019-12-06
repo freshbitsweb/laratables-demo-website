@@ -13,6 +13,17 @@
         </a>
 
         <a class="nav-item nav-link"
+            id="nav-Controller-tab-many-to-many"
+            data-toggle="tab"
+            href="#nav-controller-many-to-many"
+            role="tab"
+            aria-controls="nav-controller"
+            aria-selected="false"
+        >
+            Controller
+        </a>
+
+        <a class="nav-item nav-link"
             id="nav-view-tab-many-to-many"
             data-toggle="tab"
             href="#nav-view-many-to-many"
@@ -32,17 +43,6 @@
             aria-selected="false"
         >
             Model
-        </a>
-
-        <a class="nav-item nav-link"
-            id="nav-Controller-tab-many-to-many"
-            data-toggle="tab"
-            href="#nav-controller-many-to-many"
-            role="tab"
-            aria-controls="nav-controller"
-            aria-selected="false"
-        >
-            Controller
         </a>
 
         <a class="nav-item nav-link"
@@ -70,6 +70,16 @@
     </div>
 
     <div class="tab-pane fade"
+        id="nav-controller-many-to-many"
+        role="tabpanel"
+        aria-labelledby="nav-controller-tab-many-to-many"
+    >
+
+        @include('navtab.codes.manyToMany.controller')
+
+    </div>
+
+    <div class="tab-pane fade"
         id="nav-view-many-to-many"
         role="tabpanel"
         aria-labelledby="nav-view-tab-many-to-many"
@@ -86,16 +96,6 @@
     >
 
         @include('navtab.codes.manyToMany.model')
-
-    </div>
-
-    <div class="tab-pane fade"
-        id="nav-controller-many-to-many"
-        role="tabpanel"
-        aria-labelledby="nav-controller-tab-many-to-many"
-    >
-
-        @include('navtab.codes.manyToMany.controller')
 
     </div>
 

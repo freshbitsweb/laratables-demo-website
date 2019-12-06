@@ -13,6 +13,17 @@
         </a>
 
         <a class="nav-item nav-link"
+            id="nav-controller-tab-one-to-many"
+            data-toggle="tab"
+            href="#nav-controller-one-to-many"
+            role="tab"
+            aria-controls="nav-controller"
+            aria-selected="false"
+        >
+            Controller
+        </a>
+
+        <a class="nav-item nav-link"
             id="nav-view-tab-one-to-many"
             data-toggle="tab"
             href="#nav-view-one-to-many"
@@ -32,17 +43,6 @@
             aria-selected="false"
         >
             Model
-        </a>
-
-        <a class="nav-item nav-link"
-            id="nav-controller-tab-one-to-many"
-            data-toggle="tab"
-            href="#nav-controller-one-to-many"
-            role="tab"
-            aria-controls="nav-controller"
-            aria-selected="false"
-        >
-            Controller
         </a>
 
         <a class="nav-item nav-link"
@@ -81,6 +81,16 @@
     </div>
 
     <div class="tab-pane fade"
+        id="nav-controller-one-to-many"
+        role="tabpanel"
+        aria-labelledby="nav-controller-tab-one-to-many"
+    >
+
+        @include('navtab.codes.oneToMany.controller')
+
+    </div>
+
+    <div class="tab-pane fade"
         id="nav-view-one-to-many"
         role="tabpanel"
         aria-labelledby="nav-view-tab-one-to-many"
@@ -97,16 +107,6 @@
     >
 
         @include('navtab.codes.oneToMany.model')
-
-    </div>
-
-    <div class="tab-pane fade"
-        id="nav-controller-one-to-many"
-        role="tabpanel"
-        aria-labelledby="nav-controller-tab-one-to-many"
-    >
-
-        @include('navtab.codes.oneToMany.controller')
 
     </div>
 

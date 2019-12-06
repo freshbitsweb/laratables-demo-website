@@ -13,6 +13,17 @@
         </a>
 
         <a class="nav-item nav-link"
+            id="nav-controller-tab-customize"
+            data-toggle="tab"
+            href="#nav-controller-customize"
+            role="tab"
+            aria-controls="nav-controller"
+            aria-selected="false"
+        >
+            Controller
+        </a>
+
+        <a class="nav-item nav-link"
             id="nav-view-tab-customize"
             data-toggle="tab"
             href="#nav-view-customize"
@@ -32,17 +43,6 @@
             aria-selected="false"
         >
             Model
-        </a>
-
-        <a class="nav-item nav-link"
-            id="nav-controller-tab-customize"
-            data-toggle="tab"
-            href="#nav-controller-customize"
-            role="tab"
-            aria-controls="nav-controller"
-            aria-selected="false"
-        >
-            Controller
         </a>
 
         <a class="nav-item nav-link"
@@ -81,6 +81,16 @@
     </div>
 
     <div class="tab-pane fade"
+        id="nav-controller-customize"
+        role="tabpanel"
+        aria-labelledby="nav-controller-tab-customize"
+    >
+
+        @include('navtab.codes.customize.controller')
+
+    </div>
+
+    <div class="tab-pane fade"
         id="nav-view-customize"
         role="tabpanel"
         aria-labelledby="nav-view-tab-customize"
@@ -97,16 +107,6 @@
     >
 
         @include('navtab.codes.customize.model')
-
-    </div>
-
-    <div class="tab-pane fade"
-        id="nav-controller-customize"
-        role="tabpanel"
-        aria-labelledby="nav-controller-tab-customize"
-    >
-
-        @include('navtab.codes.customize.controller')
 
     </div>
 
