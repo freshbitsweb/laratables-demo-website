@@ -18,7 +18,7 @@
             /**
              * return data of the Many To Many Relationship datatables.
              *
-             * @return type Json
+             * @return Illuminate\Http\JsonResponse
              **/
             public function manyToManyData()
             {

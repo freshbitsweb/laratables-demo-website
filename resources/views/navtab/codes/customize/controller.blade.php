@@ -18,8 +18,7 @@
             /**
              * return data of the custom datatables.
              *
-             * @param Type $var Description
-             * @return Json
+             * @return Illuminate\Http\JsonResponse
              **/
             public function customLaratableData()
             {

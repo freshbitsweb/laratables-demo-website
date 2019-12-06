@@ -18,7 +18,7 @@
             /**
              * return data of the One To Many Polymorphic Relationship datatables.
              *
-             * @return type Json
+             * @return Illuminate\Http\JsonResponse
              **/
             public function oneToManyPolyData()
             {

@@ -18,7 +18,7 @@
             /**
              * return data of the basic datatables.
              *
-             * @return type Json
+             * @return Illuminate\Http\JsonResponse
              **/
             public function basicLaratableData()
             {

@@ -18,7 +18,7 @@
             /**
              * return data of the One To One Relationship datatables.
              *
-             * @return type Json
+             * @return Illuminate\Http\JsonResponse
              **/
             public function oneToOneData()
             {
