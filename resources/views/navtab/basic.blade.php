@@ -9,7 +9,7 @@
             aria-controls="nav-image"
             aria-selected="false"
         >
-            ScreenShots
+            Screenshots
         </a>
 
         <a class="nav-item nav-link"
