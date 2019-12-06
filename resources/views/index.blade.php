@@ -62,37 +62,41 @@
             </div>
             <div style="float:right" id="example-name-display">
 
-                <a href="https://github.com/freshbitsweb/laratables-demo-basic">
+                <a href="https://github.com/freshbitsweb/laratables-demo-basic" target="_blank">
                     <h3 id="basic-text">Basic <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
 
-                <a href="https://github.com/freshbitsweb/laratables-demo-customize-column">
+                <a href=
+                    "https://github.com/freshbitsweb/laratables-demo-customize-column" target="_blank"
+                >
                     <h3 id="customize-text" class="d-none">Customize Column
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
-                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-one">
+                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-one" target="_blank">
                     <h3 id="one-to-one-text" class="d-none">One to One
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
-                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many">
+                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many" target="_blank">
                     <h3 id="one-to-many-text" class="d-none">One To Many
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
-                <a href="https://github.com/freshbitsweb/laratables-demo-many-to-many">
+                <a href="https://github.com/freshbitsweb/laratables-demo-many-to-many" target="_blank">
                     <h3 id="many-to-many-text" class="d-none">Many To Many
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
-                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many-polymorphic">
+                <a href=
+                    "https://github.com/freshbitsweb/laratables-demo-one-to-many-polymorphic"           target="_blank"
+                >
                     <h3 id="one-to-many-poly-text" class="d-none">One To Many Polymorphic
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
@@ -100,43 +104,44 @@
             </div>
         </div>
         <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-                <div class="tab-content">
-                    <div class="tab-pane show active" id="basic">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="basic">
 
-                        @include('navtab.basic')
+                            @include('navtab.basic')
 
-                    </div>
+                        </div>
 
-                    <div class="tab-pane" id="customize">
+                        <div class="tab-pane" id="customize">
 
-                        @include('navtab.customize')
+                            @include('navtab.customize')
 
-                    </div>
+                        </div>
 
-                    <div class="tab-pane" id="one-to-one">
+                        <div class="tab-pane" id="one-to-one">
 
-                        @include('navtab.one_to_one')
+                            @include('navtab.one_to_one')
 
-                    </div>
+                        </div>
 
-                    <div class="tab-pane" id="one-to-many">
+                        <div class="tab-pane" id="one-to-many">
 
-                        @include('navtab.one_to_many')
+                            @include('navtab.one_to_many')
 
-                    </div>
+                        </div>
 
-                    <div class="tab-pane" id="many-to-many">
+                        <div class="tab-pane" id="many-to-many">
 
-                        @include('navtab.many_to_many')
+                            @include('navtab.many_to_many')
 
-                    </div>
+                        </div>
 
-                    <div class="tab-pane" id="one-to-many-poly">
+                        <div class="tab-pane" id="one-to-many-poly">
 
-                        @include('navtab.one_to_many_poly')
+                            @include('navtab.one_to_many_poly')
 
+                        </div>
                     </div>
                 </div>
             </div>
