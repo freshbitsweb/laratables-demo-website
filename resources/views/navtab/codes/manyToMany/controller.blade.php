@@ -8,9 +8,8 @@
             /**
              * Show Table Header column
              *
-             *
              * @return \Illuminate\Http\Response
-            **/
+             **/
             public function index()
             {
                 return view('many_to_many');
@@ -19,9 +18,8 @@
             /**
              * return data of the Many To Many Relationship datatables.
              *
-             *
              * @return type Json
-            **/
+             **/
             public function manyToManyData()
             {
                 return Laratables::recordsOf(User::class);

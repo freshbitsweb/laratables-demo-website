@@ -2,7 +2,8 @@
     <code class="language-php">
         /**
          * The roles that belong to the user.
-        */
+         *
+         */
         public function roles()
         {
             return $this->belongsToMany('App\Role');
@@ -13,7 +14,7 @@
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @return \Illuminate\Database\Eloquent\Builder
-        */
+         */
         public static function laratablesQueryConditions($query)
         {
             return $query->with('roles');
@@ -24,7 +25,7 @@
          *
          * @param \App\User
          * @return string
-        */
+         */
         public static function laratablesCustomUserRoles($user)
         {
             return $user->roles->implode('name', ',');
@@ -36,7 +37,7 @@
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term
          * @return \Illuminate\Database\Eloquent\Builder
-        */
+         */
         public static function laratablesSearchUserRoles($query, $searchValue)
         {
             return $query->orWhereHas('roles', function ($query) use ($searchValue) {

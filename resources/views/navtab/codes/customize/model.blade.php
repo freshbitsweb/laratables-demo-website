@@ -4,7 +4,7 @@
          * The attributes that should be mutated to dates.
          *
          * @var array
-        */
+         */
         protected $dates = [
             'start_date',
         ];
@@ -14,7 +14,7 @@
          *
          * @param \App\User
          * @return string
-        */
+         */
         public static function laratablesSalary($user)
         {
             return $user->salary = "$". number_format($user->salary);
@@ -26,7 +26,7 @@
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term
          * @return \Illuminate\Database\Eloquent\Builder
-        */
+         */
         public static function laratablesSearchSalary($query, $searchValue)
         {
             if ($searchSalary = filter_var($searchValue, FILTER_SANITIZE_NUMBER_INT)) {
@@ -40,7 +40,7 @@
          *
          * @param \App\User
          * @return string
-        */
+         */
         public static function laratablesCustomName($user)
         {
             return $user->first_name.' '.$user->last_name;
@@ -50,7 +50,7 @@
          * Additional merged columns to be loaded for datatables.
          *
          * @return array
-        */
+         */
         public static function laratablesAdditionalColumns()
         {
             return ['first_name', 'last_name'];
@@ -60,7 +60,7 @@
          * first_name column should be used for sorting when Name column is selected in Datatables.
          *
          * @return string
-        */
+         */
         public static function laratablesOrderName()
         {
             return 'first_name';
@@ -72,7 +72,7 @@
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term
          * @param \Illuminate\Database\Eloquent\Builder
-        */
+         */
         public static function laratablesSearchName($query, $searchValue)
         {
             return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
@@ -85,7 +85,7 @@
          *
          * @param \App\User
          * @return string
-        */
+         */
         public static function laratablesCustomAction($user)
         {
             return view('action', compact('user'))->render();

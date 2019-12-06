@@ -2,7 +2,8 @@
     <code class="language-php">
         /**
          * Get all of the post's likes.
-        */
+         *
+         */
         public function likes()
         {
             return $this->morphMany('App\Like', 'likeable');
@@ -13,7 +14,7 @@
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @return \Illuminate\Database\Eloquent\Builder
-        */
+         */
         public static function laratablesQueryConditions($query)
         {
             return $query->with('likes');
@@ -24,7 +25,7 @@
          *
          * @param \App\Post
          * @return string
-        */
+         */
         public static function laratablesCustomPostLiked($post)
         {
             return $post->likes->implode('name', ',');
@@ -35,7 +36,7 @@
          *
          * @param \App\Post
          * @return string
-        */
+         */
         public static function laratablesImageUrl($post)
         {
             return "<<pre><code>img src</code></pre>='$post->image_url'>";
@@ -47,7 +48,7 @@
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term
          * @return \Illuminate\Database\Eloquent\Builder
-        */
+         */
         public static function laratablesSearchPostLiked($query, $searchValue)
         {
             return $query->orWhereHas('likes', function ($query) use ($searchValue) {

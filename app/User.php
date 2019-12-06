@@ -14,17 +14,16 @@ class User extends Authenticatable
      * Indicates if the model should be timestamped.
      *
      * @var bool
-    */
+     */
     public $timestamps = false;
 
     /**
      * Get the Country that owns the users
      *
-     *
      * @param Type $var Description
      * @return type
      * @throws conditon
-    **/
+     **/
     public function country()
     {
         return $this->belongsTo('App\Country');
@@ -32,6 +31,7 @@ class User extends Authenticatable
 
     /**
      * Get the comments for the User.
+     *
     */
     public function comments()
     {
@@ -40,6 +40,7 @@ class User extends Authenticatable
 
     /**
      * The roles that belong to the user.
+     *
     */
     public function roles()
     {
