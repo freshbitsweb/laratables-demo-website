@@ -6,7 +6,7 @@
             use Freshbitsweb\Laratables\Laratables;
 
             /**
-             * Show Table Header column
+             * Display the Home Page.
              *
              * @return \Illuminate\Http\Response
              **/

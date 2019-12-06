@@ -12,7 +12,7 @@ use Freshbitsweb\Laratables\Laratables;
 class LaratableController extends Controller
 {
     /**
-     * Show the datatables examples.
+     * Display the Home Page.
      *
      * @return \Illuminate\Http\Response
      **/
