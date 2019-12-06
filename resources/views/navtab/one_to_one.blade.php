@@ -9,18 +9,18 @@
             aria-controls="nav-image"
             aria-selected="false"
         >
-            ScreenShots
+            Screenshots
         </a>
 
         <a class="nav-item nav-link"
-            id="nav-client-tab-one-to-one"
+            id="nav-view-tab-one-to-one"
             data-toggle="tab"
-            href="#nav-client-one-to-one"
+            href="#nav-view-one-to-one"
             role="tab"
-            aria-controls="nav-client"
+            aria-controls="nav-view"
             aria-selected="false"
         >
-            Client Side
+            View
         </a>
 
         <a class="nav-item nav-link"
@@ -70,12 +70,12 @@
     </div>
 
     <div class="tab-pane fade"
-        id="nav-client-one-to-one"
+        id="nav-view-one-to-one"
         role="tabpanel"
-        aria-labelledby="nav-client-tab"
+        aria-labelledby="nav-view-tab"
     >
 
-        @include('navtab.codes.oneToOne.client')
+        @include('navtab.codes.oneToOne.view')
 
     </div>
 

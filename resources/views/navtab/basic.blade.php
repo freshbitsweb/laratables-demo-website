@@ -13,14 +13,14 @@
         </a>
 
         <a class="nav-item nav-link"
-            id="nav-client-tab-basic"
+            id="nav-view-tab-basic"
             data-toggle="tab"
-            href="#nav-client-basic"
+            href="#nav-view-basic"
             role="tab"
-            aria-controls="nav-client"
+            aria-controls="nav-view"
             aria-selected="false"
         >
-            Client Side
+            View
         </a>
 
         <a class="nav-item nav-link"
@@ -60,22 +60,22 @@
     </div>
 
     <div class="tab-pane fade"
-        id="nav-client-basic"
-        role="tabpanel"
-        aria-labelledby="nav-client-tab-basic"
-    >
-
-        @include('navtab.codes.basic.client')
-
-    </div>
-
-    <div class="tab-pane fade"
         id="nav-controller-basic"
         role="tabpanel"
         aria-labelledby="nav-controller-tab-basic"
     >
 
         @include('navtab.codes.basic.controller')
+
+    </div>
+
+    <div class="tab-pane fade"
+        id="nav-view-basic"
+        role="tabpanel"
+        aria-labelledby="nav-view-tab-basic"
+    >
+
+        @include('navtab.codes.basic.view')
 
     </div>
 

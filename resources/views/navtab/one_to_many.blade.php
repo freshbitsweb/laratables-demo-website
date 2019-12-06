@@ -9,18 +9,18 @@
             aria-controls="nav-image"
             aria-selected="false"
         >
-            ScreenShots
+            Screenshots
         </a>
 
         <a class="nav-item nav-link"
-            id="nav-client-tab-one-to-many"
+            id="nav-view-tab-one-to-many"
             data-toggle="tab"
-            href="#nav-client-one-to-many"
+            href="#nav-view-one-to-many"
             role="tab"
-            aria-controls="nav-client"
+            aria-controls="nav-view"
             aria-selected="false"
         >
-            Client Side
+            View
         </a>
 
         <a class="nav-item nav-link"
@@ -81,12 +81,12 @@
     </div>
 
     <div class="tab-pane fade"
-        id="nav-client-one-to-many"
+        id="nav-view-one-to-many"
         role="tabpanel"
-        aria-labelledby="nav-client-tab-one-to-many"
+        aria-labelledby="nav-view-tab-one-to-many"
     >
 
-        @include('navtab.codes.oneToMany.client')
+        @include('navtab.codes.oneToMany.view')
 
     </div>
 

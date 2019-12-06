@@ -9,18 +9,18 @@
             aria-controls="nav-image"
             aria-selected="false"
         >
-            ScreenShots
+            Screenshots
         </a>
 
         <a class="nav-item nav-link"
-            id="nav-client-tab-customize"
+            id="nav-view-tab-customize"
             data-toggle="tab"
-            href="#nav-client-customize"
+            href="#nav-view-customize"
             role="tab"
-            aria-controls="nav-client"
+            aria-controls="nav-view"
             aria-selected="false"
         >
-            Client Side
+            View
         </a>
 
         <a class="nav-item nav-link"
@@ -81,12 +81,12 @@
     </div>
 
     <div class="tab-pane fade"
-        id="nav-client-customize"
+        id="nav-view-customize"
         role="tabpanel"
-        aria-labelledby="nav-client-tab-customize"
+        aria-labelledby="nav-view-tab-customize"
     >
 
-        @include('navtab.codes.customize.client')
+        @include('navtab.codes.customize.view')
 
     </div>
 

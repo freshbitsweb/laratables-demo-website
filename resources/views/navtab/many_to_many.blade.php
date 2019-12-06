@@ -9,18 +9,18 @@
             aria-controls="nav-image"
             aria-selected="false"
         >
-            ScreenShots
+            Screenshots
         </a>
 
         <a class="nav-item nav-link"
-            id="nav-client-tab-many-to-many"
+            id="nav-view-tab-many-to-many"
             data-toggle="tab"
-            href="#nav-client-many-to-many"
+            href="#nav-view-many-to-many"
             role="tab"
-            aria-controls="nav-client"
+            aria-controls="nav-view"
             aria-selected="false"
         >
-            Client Side
+            View
         </a>
 
         <a class="nav-item nav-link"
@@ -70,12 +70,12 @@
     </div>
 
     <div class="tab-pane fade"
-        id="nav-client-many-to-many"
+        id="nav-view-many-to-many"
         role="tabpanel"
-        aria-labelledby="nav-client-tab-many-to-many"
+        aria-labelledby="nav-view-tab-many-to-many"
     >
 
-        @include('navtab.codes.manyToMany.client')
+        @include('navtab.codes.manyToMany.view')
 
     </div>
 
