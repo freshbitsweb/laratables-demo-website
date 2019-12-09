@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-basic" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-basic"
             data-toggle="tab"
@@ -47,8 +46,8 @@
 
     </div>
 </nav>
-<div class="tab-content" id="nav-tabContent-basic">
 
+<div class="tab-content" id="nav-tabContent-basic">
     <div class="tab-pane fade show active"
         id="nav-image-basic"
         role="tabpanel"

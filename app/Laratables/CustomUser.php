@@ -2,11 +2,8 @@
 
 namespace App\Laratables;
 
-use App\User;
-
-class CustomUser extends User
+class CustomUser
 {
-
     /**
      * Change date format of start_date column value.
      *
@@ -15,7 +12,7 @@ class CustomUser extends User
      */
     public static function laratablesStartDate($user)
     {
-        return $user->start_date = date('d-m-Y', strtotime($user->start_date));
+        return date('d-m-Y', strtotime($user->start_date));
     }
 
     /**
@@ -26,7 +23,7 @@ class CustomUser extends User
      */
     public static function laratablesSalary($user)
     {
-        return $user->salary = "$". number_format($user->salary);
+        return "$". number_format($user->salary);
     }
 
     /**
@@ -88,6 +85,7 @@ class CustomUser extends User
         return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
             ->orWhere('last_name', 'like', '%'. $searchValue. '%')
         ;
+
         return $query;
     }
 

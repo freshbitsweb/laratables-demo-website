@@ -17,42 +17,42 @@
 
                 <div class="dropdown-menu">
                     <a class="dropdown-item"
-                        id="basic-dropdown-select"
+                        data-example-text-element="basic-text"
                         data-toggle="tab"
                         href="#basic"
                     >
                         Basic
                     </a>
                     <a class="dropdown-item"
-                        id="custom-dropdown-select"
+                        data-example-text-element="customize-text"
                         data-toggle="tab"
                         href="#customize"
                     >
                         Customize Column
                     </a>
                     <a class="dropdown-item"
-                        id="one-to-one-dropdown-select"
+                        data-example-text-element="one-to-one-text"
                         data-toggle="tab"
                         href="#one-to-one"
                     >
                         One-To-One
                     </a>
                     <a class="dropdown-item"
-                        id="one-to-many-dropdown-select"
+                        data-example-text-element="one-to-many-text"
                         data-toggle="tab"
                         href="#one-to-many"
                     >
                         One-To-Many
                     </a>
                     <a class="dropdown-item"
-                        id="many-to-many-dropdown-select"
+                        data-example-text-element="many-to-many-text"
                         data-toggle="tab"
                         href="#many-to-many"
                     >
                         Many-To-Many
                     </a>
                     <a class="dropdown-item"
-                        id="one-to-many-poly-dropdown-select"
+                        data-example-text-element="one-to-many-poly-text"
                         data-toggle="tab"
                         href="#one-to-many-poly"
                     >
@@ -60,87 +60,80 @@
                     </a>
                 </div>
             </div>
-            <div style="float:right" id="example-name-display">
 
+            <div style="float:right" id="example-name-display">
                 <a href="https://github.com/freshbitsweb/laratables-demo-basic" target="_blank">
                     <h3 id="basic-text">Basic <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
-
-                <a href=
-                    "https://github.com/freshbitsweb/laratables-demo-customize-column" target="_blank"
+                <a href="https://github.com/freshbitsweb/laratables-demo-customize-column"
+                    target="_blank"
                 >
-                    <h3 id="customize-text" class="d-none">Customize Column
+                    <h3 id="customize-text" class="d-none">
+                        Customize Column
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
                 <a href="https://github.com/freshbitsweb/laratables-demo-one-to-one" target="_blank">
-                    <h3 id="one-to-one-text" class="d-none">One to One
+                    <h3 id="one-to-one-text" class="d-none">
+                        One to One
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
                 <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many" target="_blank">
-                    <h3 id="one-to-many-text" class="d-none">One To Many
+                    <h3 id="one-to-many-text" class="d-none">
+                        One To Many
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
                 <a href="https://github.com/freshbitsweb/laratables-demo-many-to-many" target="_blank">
-                    <h3 id="many-to-many-text" class="d-none">Many To Many
+                    <h3 id="many-to-many-text" class="d-none">
+                        Many To Many
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
 
-                <a href=
-                    "https://github.com/freshbitsweb/laratables-demo-one-to-many-polymorphic"           target="_blank"
+                <a href="https://github.com/freshbitsweb/laratables-demo-one-to-many-polymorphic"
+                    target="_blank"
                 >
-                    <h3 id="one-to-many-poly-text" class="d-none">One To Many Polymorphic
+                    <h3 id="one-to-many-poly-text" class="d-none">
+                        One To Many Polymorphic
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
             </div>
         </div>
+
         <div class="card-body">
             <div class="row">
                 <div class="col-12">
                     <div class="tab-content">
                         <div class="tab-pane show active" id="basic">
-
                             @include('navtab.basic')
-
                         </div>
 
                         <div class="tab-pane" id="customize">
-
                             @include('navtab.customize')
-
                         </div>
 
                         <div class="tab-pane" id="one-to-one">
-
                             @include('navtab.one_to_one')
-
                         </div>
 
                         <div class="tab-pane" id="one-to-many">
-
                             @include('navtab.one_to_many')
-
                         </div>
 
                         <div class="tab-pane" id="many-to-many">
-
                             @include('navtab.many_to_many')
-
                         </div>
 
                         <div class="tab-pane" id="one-to-many-poly">
-
                             @include('navtab.one_to_many_poly')
-
                         </div>
                     </div>
                 </div>

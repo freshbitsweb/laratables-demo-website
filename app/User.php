@@ -18,11 +18,7 @@ class User extends Authenticatable
     public $timestamps = false;
 
     /**
-     * Get the Country that owns the users
-     *
-     * @param Type $var Description
-     * @return type
-     * @throws conditon
+     * Get the Country that owns the users.
      **/
     public function country()
     {
@@ -31,7 +27,6 @@ class User extends Authenticatable
 
     /**
      * Get the comments for the User.
-     *
      */
     public function comments()
     {
@@ -40,7 +35,6 @@ class User extends Authenticatable
 
     /**
      * The roles that belong to the user.
-     *
      */
     public function roles()
     {

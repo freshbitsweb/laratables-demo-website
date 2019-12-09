@@ -22,7 +22,7 @@ class LaratableController extends Controller
     }
 
     /**
-     * return data of the basic datatables.
+     * Returns data of the basic datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/
@@ -32,7 +32,7 @@ class LaratableController extends Controller
     }
 
     /**
-     * return data of the custom datatables.
+     * Returns data of the custom datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/
@@ -42,7 +42,7 @@ class LaratableController extends Controller
     }
 
     /**
-     * return data of the One To One Relationship datatables.
+     * Returns data of the One To One Relationship datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/
@@ -52,7 +52,7 @@ class LaratableController extends Controller
     }
 
     /**
-     * return data of the One To Many Relationship datatables.
+     * Returns data of the One To Many Relationship datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/
@@ -62,7 +62,7 @@ class LaratableController extends Controller
     }
 
     /**
-     * return data of the Many To Many Relationship datatables.
+     * Returns data of the Many To Many Relationship datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/
@@ -72,7 +72,7 @@ class LaratableController extends Controller
     }
 
     /**
-     * return data of the One To Many Polymorphic Relationship datatables.
+     * Returns data of the One To Many Polymorphic Relationship datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/
