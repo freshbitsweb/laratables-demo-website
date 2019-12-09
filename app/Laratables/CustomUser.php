@@ -41,6 +41,7 @@ class CustomUser extends User
         if ($searchSalary = filter_var($searchValue, FILTER_SANITIZE_NUMBER_INT)) {
             return $query->orWhere('salary', 'like', '%'. $searchSalary. '%');
         }
+
         return $query;
     }
 
@@ -85,7 +86,8 @@ class CustomUser extends User
     public static function laratablesSearchName($query, $searchValue)
     {
         return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
-            ->orWhere('last_name', 'like', '%'. $searchValue. '%');
+            ->orWhere('last_name', 'like', '%'. $searchValue. '%')
+        ;
         return $query;
     }
 

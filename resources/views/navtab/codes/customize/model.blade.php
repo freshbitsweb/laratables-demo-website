@@ -17,7 +17,7 @@
          */
         public static function laratablesSalary($user)
         {
-            return $user->salary = "$". number_format($user->salary);
+            return $user->salary = "$".number_format($user->salary);
         }
 
         /**
@@ -30,8 +30,10 @@
         public static function laratablesSearchSalary($query, $searchValue)
         {
             if ($searchSalary = filter_var($searchValue, FILTER_SANITIZE_NUMBER_INT)) {
-                return $query->orWhere('salary', 'like', '%'. $searchSalary. '%');
+                return $query->orWhere('salary', 'like', '%'. $searchSalary. '%')
+                ;
             }
+
             return $query;
         }
 
@@ -76,7 +78,8 @@
         public static function laratablesSearchName($query, $searchValue)
         {
             return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
-                ->orWhere('last_name', 'like', '%'. $searchValue. '%');
+                ->orWhere('last_name', 'like', '%'. $searchValue. '%')
+            ;
         }
 
 
