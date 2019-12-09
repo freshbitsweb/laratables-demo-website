@@ -45,7 +45,6 @@
             });
         }
 
-
         /**
          * Display currency symbol with format in salary column value.
          *
@@ -56,7 +55,6 @@
         {
             return $user->salary = "$".number_format($user->salary);
         }
-
 
         /**
          * Adds the condition for searching the salary if custom/modify for display.

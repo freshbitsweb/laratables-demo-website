@@ -13,7 +13,6 @@ class Like extends Model
      */
     public $timestamps = false;
 
-
     /**
      * Get the owning likeable model.
      *

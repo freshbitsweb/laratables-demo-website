@@ -13,7 +13,6 @@ class Post extends Model
      */
     public $timestamps = false;
 
-
     /**
      * Get all of the post's likes.
      *

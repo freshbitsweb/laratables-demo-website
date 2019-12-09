@@ -82,7 +82,6 @@
             ;
         }
 
-
         /**
          * Returns the action Column html for datatables.
          *
