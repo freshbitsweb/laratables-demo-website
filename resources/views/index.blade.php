@@ -12,7 +12,7 @@
                     type="button"
                     data-toggle="dropdown"
                 >
-                    Laratable Examples
+                    Select Example
                 </button>
 
                 <div class="dropdown-menu">
