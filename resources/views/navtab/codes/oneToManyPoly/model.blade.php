@@ -2,7 +2,6 @@
     <code class="language-php">
         /**
          * Get all of the post's likes.
-         *
          */
         public function likes()
         {
@@ -10,7 +9,7 @@
         }
 
         /**
-         * Eager load likes value of the post.
+         * Eager load likes of the post.
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @return \Illuminate\Database\Eloquent\Builder
@@ -21,7 +20,7 @@
         }
 
         /**
-         * Display the relationship data in custom column(post_liked).
+         * Display the relationship data in custom column post_liked.
          *
          * @param \App\Post
          * @return string
@@ -32,18 +31,18 @@
         }
 
         /**
-         * Display image from url in table
+         * Display image from url in table.
          *
          * @param \App\Post
          * @return string
          */
         public static function laratablesImageUrl($post)
         {
-            return "<<pre><code>img src</code></pre>='$post->image_url'>";
+            return '<<pre><code>img src</code></pre>="$post->image_url">';
         }
 
         /**
-         * searching the post_liked column data.
+         * Searching the post_liked column data.
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @param string search term

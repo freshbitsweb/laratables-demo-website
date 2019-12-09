@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-one-to-one" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-one-to-one"
             data-toggle="tab"
@@ -58,15 +57,14 @@
 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent-one-to-one">
     <div class="tab-pane fade show active"
         id="nav-image-one-to-one"
         role="tabpanel"
         aria-labelledby="nav-image-tab"
     >
-
         @include('navtab.screenshots.oneToOne.images')
-
     </div>
 
     <div class="tab-pane fade"
@@ -74,9 +72,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab"
     >
-
         @include('navtab.codes.oneToOne.controller')
-
     </div>
 
     <div class="tab-pane fade"
@@ -84,9 +80,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab"
     >
-
         @include('navtab.codes.oneToOne.view')
-
     </div>
 
     <div class="tab-pane fade"
@@ -94,9 +88,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab"
     >
-
         @include('navtab.codes.oneToOne.model')
-
     </div>
 
     <div class="tab-pane fade"
@@ -104,9 +96,7 @@
         role="tabpanel"
         aria-labelledby="nav-output-tab"
     >
-
         <br>
         @include('navtab.output.oneToOne.laratable')
-
     </div>
 </div>

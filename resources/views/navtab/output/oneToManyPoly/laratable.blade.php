@@ -1,12 +1,12 @@
-    <table id="one-to-many-poly-laratable" class="table table-bordered table-striped" style="width:100%">
-        <thead class="thead-dark">
-            <tr>
-                <th>Post Title</th>
-                <th>Post Image</th>
-                <th>Liked By</th>
-            </tr>
-        </thead>
-    </table>
+<table id="one-to-many-poly-laratable" class="table table-bordered table-striped" style="width:100%">
+    <thead class="thead-dark">
+        <tr>
+            <th>Post Title</th>
+            <th>Post Image</th>
+            <th>Liked By</th>
+        </tr>
+    </thead>
+</table>
 
 @push('scripts')
     <script>

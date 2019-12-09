@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-customize" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-customize"
             data-toggle="tab"
@@ -69,15 +68,14 @@
 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent-customize">
     <div class="tab-pane fade show active"
         id="nav-image-customize"
         role="tabpanel"
         aria-labelledby="nav-image-tab-customize"
     >
-
         @include('navtab.screenshots.customize.images')
-
     </div>
 
     <div class="tab-pane fade"
@@ -85,9 +83,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-customize"
     >
-
         @include('navtab.codes.customize.controller')
-
     </div>
 
     <div class="tab-pane fade"
@@ -95,9 +91,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-customize"
     >
-
         @include('navtab.codes.customize.view')
-
     </div>
 
     <div class="tab-pane fade"
@@ -105,9 +99,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-customize"
     >
-
         @include('navtab.codes.customize.model')
-
     </div>
 
     <div class="tab-pane fade"
@@ -115,9 +107,7 @@
         role="tabpanel"
         aria-labelledby="nav-config-tab-customize"
     >
-
         @include('navtab.codes.customize.config')
-
     </div>
 
     <div class="tab-pane fade"
@@ -125,10 +115,7 @@
         role="tabpanel"
         aria-labelledby="nav-output-tab-customize"
     >
-
         <br>
         @include('navtab.output.customize.laratable')
-
     </div>
-
 </div>

@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-one-to-many-poly" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-one-to-many-poly"
             data-toggle="tab"
@@ -58,15 +57,14 @@
 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent-one-to-many-poly">
     <div class="tab-pane fade show active"
         id="nav-image-one-to-many-poly"
         role="tabpanel"
         aria-labelledby="nav-image-tab-one-to-many-poly"
     >
-
         @include('navtab.screenshots.oneToManyPoly.images')
-
     </div>
 
     <div class="tab-pane fade"
@@ -74,9 +72,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-one-to-many-poly"
     >
-
         @include('navtab.codes.oneToManyPoly.controller')
-
     </div>
 
     <div class="tab-pane fade"
@@ -84,9 +80,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-one-to-many-poly"
     >
-
         @include('navtab.codes.oneToManyPoly.view')
-
     </div>
 
     <div class="tab-pane fade"
@@ -94,9 +88,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-one-to-many-poly"
     >
-
         @include('navtab.codes.oneToManyPoly.model')
-
     </div>
 
     <div class="tab-pane fade"
@@ -104,7 +96,6 @@
         role="tabpanel"
         aria-labelledby="nav-output-tab-one-to-many-poly"
     >
-
         <br>
         @include('navtab.output.oneToManyPoly.laratable')
 

@@ -1,13 +1,13 @@
-    <table id="custom-laratable" class="table table-bordered table-striped" style="width:100%">
-        <thead class="thead-dark">
-            <tr>
-                <th>Name</th>
-                <th>Start Date</th>
-                <th>Salary</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-    </table>
+<table id="custom-laratable" class="table table-bordered table-striped" style="width:100%">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+</table>
 
 @push('scripts')
     <script>

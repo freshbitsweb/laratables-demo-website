@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-one-to-many" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-one-to-many"
             data-toggle="tab"
@@ -69,15 +68,14 @@
 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent-one-to-many">
     <div class="tab-pane fade show active"
         id="nav-image-one-to-many"
         role="tabpanel"
         aria-labelledby="nav-image-tab-one-to-many"
     >
-
         @include('navtab.screenshots.oneToMany.images')
-
     </div>
 
     <div class="tab-pane fade"
@@ -85,9 +83,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-one-to-many"
     >
-
         @include('navtab.codes.oneToMany.controller')
-
     </div>
 
     <div class="tab-pane fade"
@@ -95,9 +91,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-one-to-many"
     >
-
         @include('navtab.codes.oneToMany.view')
-
     </div>
 
     <div class="tab-pane fade"
@@ -105,9 +99,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-one-to-many"
     >
-
         @include('navtab.codes.oneToMany.model')
-
     </div>
 
     <div class="tab-pane fade"
@@ -115,9 +107,7 @@
         role="tabpanel"
         aria-labelledby="nav-config-tab-one-to-many"
     >
-
         @include('navtab.codes.oneToMany.config')
-
     </div>
 
     <div class="tab-pane fade"
@@ -125,9 +115,7 @@
         role="tabpanel"
         aria-labelledby="nav-output-tab-one-to-many"
     >
-
         <br>
         @include('navtab.output.oneToMany.laratable')
-
     </div>
 </div>

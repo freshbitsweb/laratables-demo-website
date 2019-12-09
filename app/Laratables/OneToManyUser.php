@@ -1,9 +1,7 @@
 <?php
 namespace App\Laratables;
 
-use App\User;
-
-class OneToManyUser extends User
+class OneToManyUser
 {
     /**
      * Change date format of start_date column value.
@@ -13,11 +11,11 @@ class OneToManyUser extends User
      */
     public static function laratablesStartDate($user)
     {
-        return $user->start_date = date('d-m-Y', strtotime($user->start_date));
+        return date('d-m-Y', strtotime($user->start_date));
     }
 
     /**
-     * Eager load comments value of the user.
+     * Eager load comments of the user.
      *
      * @param \Illuminate\Database\Eloquent\Builder
      * @return \Illuminate\Database\Eloquent\Builder
@@ -28,7 +26,7 @@ class OneToManyUser extends User
     }
 
     /**
-     * Display the relationship data in custom column(user_ comments).
+     * Display the relationship data in custom column(user_comments).
      *
      * @param \App\User
      * @return string
@@ -37,7 +35,6 @@ class OneToManyUser extends User
     {
         return $user->comments->implode('content', ',');
     }
-
 
     /**
      * Adds the condition for searching the User comment.
@@ -53,7 +50,6 @@ class OneToManyUser extends User
         });
     }
 
-
     /**
      * Display currency symbol with format in salary column.
      *
@@ -62,9 +58,8 @@ class OneToManyUser extends User
      */
     public static function laratablesSalary($user)
     {
-        return $user->salary = "$".number_format($user->salary);
+        return "$".number_format($user->salary);
     }
-
 
     /**
      * Adds the condition for searching the salary if custom/modify for display.
@@ -76,13 +71,11 @@ class OneToManyUser extends User
     public static function laratablesSearchSalary($query, $searchValue)
     {
         if ($searchSalary = preg_replace('/[^A-Za-z0-9\-]/', '', $searchValue)) {
-            return $query->orWhere('salary', 'like', '%'. $searchSalary. '%')
-            ;
+            return $query->orWhere('salary', 'like', '%'. $searchSalary. '%');
         }
 
         return $query;
     }
-
 
     /**
      * Returns the first_name & last_name value in Name column for datatables.
@@ -95,7 +88,6 @@ class OneToManyUser extends User
         return $user->first_name. ' ' .$user->last_name;
     }
 
-
     /**
      * Additional merged columns to be loaded for datatables.
      *
@@ -106,9 +98,8 @@ class OneToManyUser extends User
         return ['first_name', 'last_name'];
     }
 
-
     /**
-     * first_name column should be used for sorting when Name column is selected in Datatables.
+     * First_name column should be used for sorting when Name column is selected in Datatables.
      *
      * @return string
      */
@@ -116,7 +107,6 @@ class OneToManyUser extends User
     {
         return 'first_name';
     }
-
 
     /**
      * Searching the user(column merged) in the query.

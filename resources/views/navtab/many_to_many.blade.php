@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-many-to-many" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-many-to-many"
             data-toggle="tab"
@@ -58,15 +57,14 @@
 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent-many-to-many">
     <div class="tab-pane fade show active"
         id="nav-image-many-to-many"
         role="tabpanel"
         aria-labelledby="nav-image-tab-many-to-many"
     >
-
         @include('navtab.screenshots.manyToMany.images')
-
     </div>
 
     <div class="tab-pane fade"
@@ -74,9 +72,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-many-to-many"
     >
-
         @include('navtab.codes.manyToMany.controller')
-
     </div>
 
     <div class="tab-pane fade"
@@ -84,9 +80,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-many-to-many"
     >
-
         @include('navtab.codes.manyToMany.view')
-
     </div>
 
     <div class="tab-pane fade"
@@ -94,9 +88,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-many-to-many"
     >
-
         @include('navtab.codes.manyToMany.model')
-
     </div>
 
     <div class="tab-pane fade"
@@ -104,7 +96,6 @@
         role="tabpanel"
         aria-labelledby="nav-output-tab-many-to-many"
     >
-
         <br>
         @include('navtab.output.manyToMany.laratable')
 

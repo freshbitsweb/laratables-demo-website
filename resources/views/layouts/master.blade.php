@@ -20,7 +20,6 @@
     >
 
     <style>
-
         #btn-align, #example-name-display {
             margin-top: 09px;
         }
@@ -54,7 +53,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <!-- Right Side Of Navbar -->
+                    {{-- Right Side Of Navbar --}}
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link"
@@ -69,6 +68,7 @@
             </div>
         </nav>
     </div>
+
 
 @yield('content')
 
@@ -89,65 +89,20 @@
     </script>
 
     <script>
-        // Basic Example text Display
-        $(document).on('click','#basic-dropdown-select',function(){
-            $("#customize-text").addClass("d-none");
-            $("#one-to-one-text").addClass("d-none");
-            $("#one-to-many-text").addClass("d-none");
-            $("#many-to-many-text").addClass("d-none");
-            $("#one-to-many-poly-text").addClass("d-none");
-            $("#basic-text").removeClass("d-none");
+        {{-- Display Example name --}}
+        $(document).on('click', '.dropdown-item', function() {
+            displayExampleTitle("#" + $(this).data('example-text-element'));
         });
 
-        // Customize Column Example text Display
-        $(document).on('click','#custom-dropdown-select',function(){
-            $("#basic-text").addClass("d-none");
-            $("#one-to-one-text").addClass("d-none");
-            $("#one-to-many-text").addClass("d-none");
-            $("#many-to-many-text").addClass("d-none");
-            $("#one-to-many-poly-text").addClass("d-none");
-            $("#customize-text").removeClass("d-none");
-        });
-
-        // One to One Example text Display
-        $(document).on('click','#one-to-one-dropdown-select',function(){
-            $("#basic-text").addClass("d-none");
-            $("#customize-text").addClass("d-none");
-            $("#one-to-many-text").addClass("d-none");
-            $("#many-to-many-text").addClass("d-none");
-            $("#one-to-many-poly-text").addClass("d-none");
-            $("#one-to-one-text").removeClass("d-none");
-        });
-
-        // One to Many Example text Display
-        $(document).on('click','#one-to-many-dropdown-select',function(){
-            $("#basic-text").addClass("d-none");
-            $("#customize-text").addClass("d-none");
-            $("#one-to-one-text").addClass("d-none");
-            $("#many-to-many-text").addClass("d-none");
-            $("#one-to-many-poly-text").addClass("d-none");
-            $("#one-to-many-text").removeClass("d-none");
-        });
-
-        // Many to Many Example text Display
-        $(document).on('click','#many-to-many-dropdown-select',function(){
-            $("#basic-text").addClass("d-none");
-            $("#customize-text").addClass("d-none");
-            $("#one-to-one-text").addClass("d-none");
-            $("#one-to-many-text").addClass("d-none");
-            $("#one-to-many-poly-text").addClass("d-none");
-            $("#many-to-many-text").removeClass("d-none");
-        });
-
-        // Many to Many Poly Example text Display
-        $(document).on('click','#one-to-many-poly-dropdown-select',function(){
+        function displayExampleTitle(elementId) {
             $("#basic-text").addClass("d-none");
             $("#customize-text").addClass("d-none");
             $("#one-to-one-text").addClass("d-none");
             $("#one-to-many-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
-            $("#one-to-many-poly-text").removeClass("d-none");
-        });
+            $("#one-to-many-poly-text").addClass("d-none");
+            $(elementId).removeClass("d-none");
+        }
     </script>
 </body>
 </html>

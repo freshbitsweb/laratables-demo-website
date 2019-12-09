@@ -2,11 +2,8 @@
 
 namespace App\Laratables;
 
-use App\User;
-
-class CustomUser extends User
+class CustomUser
 {
-
     /**
      * Change date format of start_date column value.
      *
@@ -15,7 +12,7 @@ class CustomUser extends User
      */
     public static function laratablesStartDate($user)
     {
-        return $user->start_date = date('d-m-Y', strtotime($user->start_date));
+        return date('d-m-Y', strtotime($user->start_date));
     }
 
     /**
@@ -26,7 +23,7 @@ class CustomUser extends User
      */
     public static function laratablesSalary($user)
     {
-        return $user->salary = "$". number_format($user->salary);
+        return "$". number_format($user->salary);
     }
 
     /**
@@ -67,7 +64,7 @@ class CustomUser extends User
     }
 
     /**
-     * first_name column should be used for sorting when Name column is selected in Datatables.
+     * First_name column should be used for sorting when Name column is selected in Datatables.
      *
      * @return string
      */

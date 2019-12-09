@@ -2,14 +2,10 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use Notifiable;
-
     /**
      * Indicates if the model should be timestamped.
      *
@@ -18,11 +14,7 @@ class User extends Authenticatable
     public $timestamps = false;
 
     /**
-     * Get the Country that owns the users
-     *
-     * @param Type $var Description
-     * @return type
-     * @throws conditon
+     * Get the Country that owns the users.
      **/
     public function country()
     {
@@ -31,7 +23,6 @@ class User extends Authenticatable
 
     /**
      * Get the comments for the User.
-     *
      */
     public function comments()
     {
@@ -40,7 +31,6 @@ class User extends Authenticatable
 
     /**
      * The roles that belong to the user.
-     *
      */
     public function roles()
     {

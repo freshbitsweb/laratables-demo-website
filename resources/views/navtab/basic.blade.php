@@ -1,6 +1,5 @@
 <nav>
     <div class="nav nav-tabs" id="nav-tab-basic" role="tablist">
-
         <a class="nav-item nav-link active"
             id="nav-image-tab-basic"
             data-toggle="tab"
@@ -47,6 +46,7 @@
 
     </div>
 </nav>
+
 <div class="tab-content" id="nav-tabContent-basic">
 
     <div class="tab-pane fade show active"
@@ -54,9 +54,7 @@
         role="tabpanel"
         aria-labelledby="nav-image-tab-basic"
     >
-
         @include('navtab.screenshots.basic.images')
-
     </div>
 
     <div class="tab-pane fade"
@@ -64,9 +62,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-basic"
     >
-
         @include('navtab.codes.basic.controller')
-
     </div>
 
     <div class="tab-pane fade"
@@ -74,9 +70,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-basic"
     >
-
         @include('navtab.codes.basic.view')
-
     </div>
 
     <div class="tab-pane fade"
@@ -86,7 +80,5 @@
     >
         <br>
         @include('navtab.output.basic.laratable')
-
     </div>
-
 </div>

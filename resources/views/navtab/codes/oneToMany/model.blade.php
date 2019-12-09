@@ -2,7 +2,6 @@
     <code class="language-php">
         /**
          * Get the comments for the User.
-         *
          */
         public function comments()
         {
@@ -10,7 +9,7 @@
         }
 
         /**
-         * Eager load comments value of the user.
+         * Eager load comments of the user.
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @return \Illuminate\Database\Eloquent\Builder
@@ -53,7 +52,7 @@
          */
         public static function laratablesSalary($user)
         {
-            return $user->salary = "$".number_format($user->salary);
+            return "$".number_format($user->salary);
         }
 
         /**
@@ -66,8 +65,7 @@
         public static function laratablesSearchSalary($query, $searchValue)
         {
             if ($searchSalary = preg_replace('/[^A-Za-z0-9\-]/', '', $searchValue)) {
-                return $query->orWhere('salary', 'like', '%'. $searchSalary. '%')
-                ;
+                return $query->orWhere('salary', 'like', '%'. $searchSalary. '%');
             }
 
             return $query;
@@ -104,7 +102,7 @@
         }
 
         /**
-         * first_name column should be used for sorting when Name column is selected in Datatables.
+         * First_name column should be used for sorting when Name column is selected in Datatables.
          *
          * @return string
          */

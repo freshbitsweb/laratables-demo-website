@@ -15,7 +15,6 @@ class Post extends Model
 
     /**
      * Get all of the post's likes.
-     *
      */
     public function likes()
     {
@@ -23,7 +22,7 @@ class Post extends Model
     }
 
     /**
-     * Eager load likes value of the post.
+     * Eager load the likes of the post.
      *
      * @param \Illuminate\Database\Eloquent\Builder
      * @return \Illuminate\Database\Eloquent\Builder
@@ -34,7 +33,7 @@ class Post extends Model
     }
 
     /**
-     * Display the relationship data in custom column(post_liked).
+     * Display the relationship data in custom post_liked.
      *
      * @param \App\Post
      * @return string
@@ -45,18 +44,18 @@ class Post extends Model
     }
 
     /**
-     * Display image from url in table
+     * Display image from url in table.
      *
      * @param \App\Post
      * @return string
      */
     public static function laratablesImageUrl($post)
     {
-        return "<img src='$post->image_url'>";
+        return '<img src="'.$post->image_url.'">';
     }
 
     /**
-     * searching the postLiked column data.
+     * Searching the post_liked column data.
      *
      * @param \Illuminate\Database\Eloquent\Builder
      * @param string search term

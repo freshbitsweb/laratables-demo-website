@@ -1,12 +1,10 @@
 <?php
 namespace App\Laratables;
 
-use App\User;
-
-class ManyToManyUser extends User
+class ManyToManyUser
 {
     /**
-     * Eager load roles value of the user.
+     * Eager load roles of the user.
      *
      * @param \Illuminate\Database\Eloquent\Builder
      * @return \Illuminate\Database\Eloquent\Builder

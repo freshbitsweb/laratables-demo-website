@@ -2,7 +2,6 @@
     <code class="language-php">
         /**
          * The roles that belong to the user.
-         *
          */
         public function roles()
         {
@@ -10,7 +9,7 @@
         }
 
         /**
-         * Eager load roles value of the user.
+         * Eager load roles of the user.
          *
          * @param \Illuminate\Database\Eloquent\Builder
          * @return \Illuminate\Database\Eloquent\Builder
