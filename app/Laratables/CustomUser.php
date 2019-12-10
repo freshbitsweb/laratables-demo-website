@@ -23,7 +23,7 @@ class CustomUser
      */
     public static function laratablesSalary($user)
     {
-        return "$". number_format($user->salary);
+        return "$".number_format($user->salary);
     }
 
     /**
