@@ -64,7 +64,7 @@
         role="tabpanel"
         aria-labelledby="nav-image-tab"
     >
-        @include('navtab.screenshots.oneToOne.images')
+        @include('navtab.screenshots.one_to_one.images')
     </div>
 
     <div class="tab-pane fade"
@@ -72,7 +72,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab"
     >
-        @include('navtab.codes.oneToOne.controller')
+        @include('navtab.codes.one_to_one.controller')
     </div>
 
     <div class="tab-pane fade"
@@ -80,7 +80,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab"
     >
-        @include('navtab.codes.oneToOne.view')
+        @include('navtab.codes.one_to_one.view')
     </div>
 
     <div class="tab-pane fade"
@@ -88,7 +88,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab"
     >
-        @include('navtab.codes.oneToOne.model')
+        @include('navtab.codes.one_to_one.model')
     </div>
 
     <div class="tab-pane fade"
@@ -97,6 +97,6 @@
         aria-labelledby="nav-output-tab"
     >
         <br>
-        @include('navtab.output.oneToOne.laratable')
+        @include('navtab.output.one_to_one.laratable')
     </div>
 </div>

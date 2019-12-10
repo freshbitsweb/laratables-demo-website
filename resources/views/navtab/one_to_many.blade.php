@@ -75,7 +75,7 @@
         role="tabpanel"
         aria-labelledby="nav-image-tab-one-to-many"
     >
-        @include('navtab.screenshots.oneToMany.images')
+        @include('navtab.screenshots.one_to_many.images')
     </div>
 
     <div class="tab-pane fade"
@@ -83,7 +83,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-one-to-many"
     >
-        @include('navtab.codes.oneToMany.controller')
+        @include('navtab.codes.one_to_many.controller')
     </div>
 
     <div class="tab-pane fade"
@@ -91,7 +91,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-one-to-many"
     >
-        @include('navtab.codes.oneToMany.view')
+        @include('navtab.codes.one_to_many.view')
     </div>
 
     <div class="tab-pane fade"
@@ -99,7 +99,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-one-to-many"
     >
-        @include('navtab.codes.oneToMany.model')
+        @include('navtab.codes.one_to_many.model')
     </div>
 
     <div class="tab-pane fade"
@@ -107,7 +107,7 @@
         role="tabpanel"
         aria-labelledby="nav-config-tab-one-to-many"
     >
-        @include('navtab.codes.oneToMany.config')
+        @include('navtab.codes.one_to_many.config')
     </div>
 
     <div class="tab-pane fade"
@@ -116,6 +116,6 @@
         aria-labelledby="nav-output-tab-one-to-many"
     >
         <br>
-        @include('navtab.output.oneToMany.laratable')
+        @include('navtab.output.one_to_many.laratable')
     </div>
 </div>

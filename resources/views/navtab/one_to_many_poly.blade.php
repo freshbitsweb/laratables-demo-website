@@ -64,7 +64,7 @@
         role="tabpanel"
         aria-labelledby="nav-image-tab-one-to-many-poly"
     >
-        @include('navtab.screenshots.oneToManyPoly.images')
+        @include('navtab.screenshots.one_to_many_poly.images')
     </div>
 
     <div class="tab-pane fade"
@@ -72,7 +72,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-one-to-many-poly"
     >
-        @include('navtab.codes.oneToManyPoly.controller')
+        @include('navtab.codes.one_to_many_poly.controller')
     </div>
 
     <div class="tab-pane fade"
@@ -80,7 +80,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-one-to-many-poly"
     >
-        @include('navtab.codes.oneToManyPoly.view')
+        @include('navtab.codes.one_to_many_poly.view')
     </div>
 
     <div class="tab-pane fade"
@@ -88,7 +88,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-one-to-many-poly"
     >
-        @include('navtab.codes.oneToManyPoly.model')
+        @include('navtab.codes.one_to_many_poly.model')
     </div>
 
     <div class="tab-pane fade"
@@ -97,7 +97,7 @@
         aria-labelledby="nav-output-tab-one-to-many-poly"
     >
         <br>
-        @include('navtab.output.oneToManyPoly.laratable')
+        @include('navtab.output.one_to_many_poly.laratable')
 
     </div>
 </div>

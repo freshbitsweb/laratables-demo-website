@@ -64,7 +64,7 @@
         role="tabpanel"
         aria-labelledby="nav-image-tab-many-to-many"
     >
-        @include('navtab.screenshots.manyToMany.images')
+        @include('navtab.screenshots.many_to_many.images')
     </div>
 
     <div class="tab-pane fade"
@@ -72,7 +72,7 @@
         role="tabpanel"
         aria-labelledby="nav-controller-tab-many-to-many"
     >
-        @include('navtab.codes.manyToMany.controller')
+        @include('navtab.codes.many_to_many.controller')
     </div>
 
     <div class="tab-pane fade"
@@ -80,7 +80,7 @@
         role="tabpanel"
         aria-labelledby="nav-view-tab-many-to-many"
     >
-        @include('navtab.codes.manyToMany.view')
+        @include('navtab.codes.many_to_many.view')
     </div>
 
     <div class="tab-pane fade"
@@ -88,7 +88,7 @@
         role="tabpanel"
         aria-labelledby="nav-model-tab-many-to-many"
     >
-        @include('navtab.codes.manyToMany.model')
+        @include('navtab.codes.many_to_many.model')
     </div>
 
     <div class="tab-pane fade"
@@ -97,7 +97,7 @@
         aria-labelledby="nav-output-tab-many-to-many"
     >
         <br>
-        @include('navtab.output.manyToMany.laratable')
+        @include('navtab.output.many_to_many.laratable')
 
     </div>
 </div>
