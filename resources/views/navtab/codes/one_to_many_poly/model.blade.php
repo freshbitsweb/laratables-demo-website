@@ -1,5 +1,13 @@
 <pre>
     <code class="language-php">
+	    /**
+     	 * Get all of the post's likes.
+     	 */
+	    public function likes()
+	    {
+		    return $this->morphMany('App\Like', 'likeable');
+	    }
+
         /**
          * Eager load likes value of the post.
          *
