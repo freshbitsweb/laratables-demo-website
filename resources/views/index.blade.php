@@ -62,14 +62,12 @@
             </div>
 
             <div style="float:right" id="example-name-display">
-
                 <a href="https://github.com/freshbitsweb/laratables-demo-basic" target="_blank">
                     <h3 id="basic-text">
                         Basic
                         <i class="fas fa-external-link-alt fa-xs"></i>
                     </h3>
                 </a>
-
 
                 <a href="https://github.com/freshbitsweb/laratables-demo-customize-column"
                     target="_blank"

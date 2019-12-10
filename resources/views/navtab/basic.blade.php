@@ -46,9 +46,13 @@
 
     </div>
 </nav>
+<<<<<<< HEAD
 
 <div class="tab-content" id="nav-tabContent-basic">
+=======
+>>>>>>> d8571f20e4200599365c4017ed5519047b66a4a7
 
+<div class="tab-content" id="nav-tabContent-basic">
     <div class="tab-pane fade show active"
         id="nav-image-basic"
         role="tabpanel"

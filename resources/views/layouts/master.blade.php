@@ -52,7 +52,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                     {{-- Right Side Of Navbar --}}
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -70,7 +69,7 @@
     </div>
 
 
-@yield('content')
+    @yield('content')
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -101,6 +100,7 @@
             $("#one-to-many-text").addClass("d-none");
             $("#many-to-many-text").addClass("d-none");
             $("#one-to-many-poly-text").addClass("d-none");
+
             $(elementId).removeClass("d-none");
         }
     </script>

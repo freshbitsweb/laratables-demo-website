@@ -33,7 +33,11 @@ class Post extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Display the relationship data in custom post_liked.
+=======
+     * Display the relationship data in custom column post_liked.
+>>>>>>> d8571f20e4200599365c4017ed5519047b66a4a7
      *
      * @param \App\Post
      * @return string
