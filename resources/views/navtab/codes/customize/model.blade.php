@@ -91,5 +91,30 @@
         {
             return view('action', compact('user'))->render();
         }
+
+        /**
+         * Sets the serial number column value for each user.
+         *
+         * @param \Illuminate\Support\Collection
+         * @return \Illuminate\Support\Collection
+         **/
+        public static function laratablesModifyCollection($users)
+        {
+            return $users->map(function ($user, $key) {
+                $user->serial_no = $key + 1 + request()->input('start');
+                return $user;
+            });
+        }
+
+        /**
+         * Returns the custom column serial number value for table.
+         *
+         * @param \App\User $user
+         * @return string
+         **/
+        public static function laratablesCustomSerialNo($user)
+        {
+            return $user->serial_no;
+        }
     </code>
 </pre>
