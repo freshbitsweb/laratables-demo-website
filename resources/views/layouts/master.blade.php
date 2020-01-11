@@ -9,25 +9,19 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
-
     <link rel="stylesheet" href="css/prism_php.css">
-
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     >
-
+    @stack('styles')
     <style>
-        #btn-align, #example-name-display {
-            margin-top: 09px;
-        }
-
         .body-color {
             background-color: wheat;
         }
-
         .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
             background-color: #f0f1f2;
         }
