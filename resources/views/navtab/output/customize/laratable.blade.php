@@ -18,7 +18,7 @@
                 ajax: "{{ route('custom_laratable') }}",
                 order: [[1, "asc"]],
                 columns: [
-                     { name: 'serial_no', orderable: false, searchable: false},
+                    { name: 'serial_no', orderable: false, searchable: false},
                     { name: 'Name' },
                     { name: 'start_date' },
                     { name: 'salary' },
